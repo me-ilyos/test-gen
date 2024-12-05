@@ -1,0 +1,114 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is the primary function of an operating system?",
+        "variants": [
+          {"id": 1, "text": "To run video games"},
+          {"id": 2, "text": "To manage hardware and software resources"},
+          {"id": 3, "text": "To browse the internet"},
+          {"id": 4, "text": "To create documents"}
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "text": "Which data structure uses LIFO principle?",
+        "variants": [
+          {"id": 1, "text": "Queue"},
+          {"id": 2, "text": "Stack"},
+          {"id": 3, "text": "Tree"},
+          {"id": 4, "text": "Graph"}
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "text": "What is the time complexity of binary search?",
+        "variants": [
+          {"id": 1, "text": "O(n)"},
+          {"id": 2, "text": "O(n^2)"},
+          {"id": 3, "text": "O(log n)"},
+          {"id": 4, "text": "O(1)"}
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "text": "Which protocol is used for secure web browsing?",
+        "variants": [
+          {"id": 1, "text": "HTTP"},
+          {"id": 2, "text": "FTP"},
+          {"id": 3, "text": "HTTPS"},
+          {"id": 4, "text": "SMTP"}
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "text": "What does SQL stand for?",
+        "variants": [
+          {"id": 1, "text": "Structured Query Language"},
+          {"id": 2, "text": "Simple Query Language"},
+          {"id": 3, "text": "Standard Query Logic"},
+          {"id": 4, "text": "System Query Language"}
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "text": "Which language is primarily used for web styling?",
+        "variants": [
+          {"id": 1, "text": "HTML"},
+          {"id": 2, "text": "JavaScript"},
+          {"id": 3, "text": "Python"},
+          {"id": 4, "text": "CSS"}
+        ],
+        "correct": 4
+      },
+      {
+        "id": 7,
+        "text": "What is the purpose of a constructor in OOP?",
+        "variants": [
+          {"id": 1, "text": "To destroy objects"},
+          {"id": 2, "text": "To initialize object properties"},
+          {"id": 3, "text": "To copy objects"},
+          {"id": 4, "text": "To compare objects"}
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "text": "Which is not a primitive data type in JavaScript?",
+        "variants": [
+          {"id": 1, "text": "String"},
+          {"id": 2, "text": "Number"},
+          {"id": 3, "text": "Array"},
+          {"id": 4, "text": "Boolean"}
+        ],
+        "correct": 3
+      },
+      {
+        "id": 9,
+        "text": "What does API stand for?",
+        "variants": [
+          {"id": 1, "text": "Application Programming Interface"},
+          {"id": 2, "text": "Advanced Programming Implementation"},
+          {"id": 3, "text": "Automated Program Integration"},
+          {"id": 4, "text": "Application Process Integration"}
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "text": "Which sorting algorithm has the worst time complexity?",
+        "variants": [
+          {"id": 1, "text": "Quick Sort"},
+          {"id": 2, "text": "Merge Sort"},
+          {"id": 3, "text": "Bubble Sort"},
+          {"id": 4, "text": "Heap Sort"}
+        ],
+        "correct": 3
+      }
+    ]
+  }
