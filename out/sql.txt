@@ -1,0 +1,329 @@
+Ma'lumotlar bazasi boshqaruv tizimi (DBMS) ning asosiy vazifasi nima?
+====
+Faqat ma'lumotlarni saqlash
+====
+Faqat ma'lumotlarni o'chirish
+====
+#Ma'lumotlarni saqlash va boshqarish
+====
+Faqat hisobotlar yaratish
+====
+++++
+PRIMARY KEY uchun qaysi shart to'g'ri?
+====
+Takrorlanishi mumkin
+====
+NULL qiymat qabul qilishi mumkin
+====
+Bir nechta ustunlardan iborat bo'lishi mumkin emas
+====
+#Noyob va NULL bo'lmagan qiymatlarni o'z ichiga olishi kerak
+====
+++++
+SQL da LIKE operatori qanday vazifani bajaradi?
+====
+#Belgilangan pattern bo'yicha matnni qidiradi
+====
+Sonlarni taqqoslaydi
+====
+Ma'lumotlarni tartiblaydi
+====
+Ustunlarni birlashtiradi
+====
+++++
+INNER JOIN operatsiyasi qanday natija qaytaradi?
+====
+Barcha yozuvlarni
+====
+#Faqat mos keladigan yozuvlarni
+====
+Chap jadvalning barcha yozuvlarini
+====
+O'ng jadvalning barcha yozuvlarini
+====
+++++
+GROUP BY operatori bilan qaysi aggregate funksiyani ishlatish mumkin?
+====
+LIKE
+====
+BETWEEN
+====
+#COUNT
+====
+LIMIT
+====
+++++
+One-to-many munosabatda:
+====
+Bir yozuv faqat bitta yozuv bilan bog'lanishi mumkin
+====
+#Bir yozuv bir nechta yozuvlar bilan bog'lanishi mumkin
+====
+Hamma yozuvlar o'zaro bog'langan
+====
+Bog'lanish bo'lmaydi
+====
+++++
+LEFT JOIN va RIGHT JOIN farqi nimada?
+====
+Hech qanday farq yo'q
+====
+#Natijada qaysi jadval to'liq ko'rsatilishida
+====
+Ishlash tezligida
+====
+Sintaksisida
+====
+++++
+HAVING operatori nima uchun ishlatiladi?
+====
+Barcha qatorlarni filtrlash uchun
+====
+Ma'lumotlarni tartiblash uchun
+====
+#Guruhlangan ma'lumotlarni filtrlash uchun
+====
+Ustunlarni birlashtirish uchun
+====
+++++
+NULL qiymat bu:
+====
+0 qiymati
+====
+Bo'sh satr
+====
+#Mavjud bo'lmagan qiymat
+====
+Maxsus belgi
+====
+++++
+WHERE va HAVING operatorlari orasidagi farq:
+====
+Hech qanday farq yo'q
+====
+#WHERE guruhlanishdan oldin, HAVING keyin ishlaydi
+====
+WHERE tezroq ishlaydi
+====
+HAVING ko'proq shartlarni qo'llab-quvvatlaydi
+====
+++++
+UNION operatori:
+====
+#Ikki so'rovning natijalarini birlashtiradi
+====
+Jadvallarni birlashtiradi
+====
+Ustunlarni birlashtiradi
+====
+Qatorlarni birlashtiradi
+====
+++++
+Qaysi operator ma'lumotlarni o'sish tartibida saralaydi?
+====
+DESC
+====
+#ASC
+====
+ORDER
+====
+SORT
+====
+++++
+DISTINCT operatori nima vazifani bajaradi?
+====
+Barcha qatorlarni qaytaradi
+====
+#Takrorlanmaydigan qatorlarni qaytaradi
+====
+Ma'lumotlarni tartiblaydi
+====
+Guruhlaydi
+====
+++++
+Foreign key...
+====
+Har doim PRIMARY KEY bo'lishi kerak
+====
+#Boshqa jadvalning PRIMARY KEY'iga bog'lanadi
+====
+NULL bo'lishi mumkin emas
+====
+Faqat sonlardan iborat bo'lishi kerak
+====
+++++
+Many-to-many munosabatni yaratish uchun:
+====
+Bitta jadval yetarli
+====
+#Qo'shimcha jadval kerak bo'ladi
+====
+Ikkita ustun yetarli
+====
+Foreign key yetarli
+====
+++++
+OFFSET operatori...
+====
+Ma'lumotlarni tartiblaydi
+====
+#Ma'lum miqdordagi qatorlarni o'tkazib yuboradi
+====
+Ma'lumotlarni filtrlaydi
+====
+Ustunlarni birlashtiradi
+====
+++++
+Qaysi aggregate funktsiya o'rtacha qiymatni hisoblaydi?
+====
+SUM
+====
+COUNT
+====
+#AVG
+====
+MAX
+====
+++++
+NATURAL JOIN...
+====
+#Bir xil nomli ustunlar bo'yicha avtomatik birlashtiradi
+====
+Barcha ustunlarni birlashtiradi
+====
+Faqat PRIMARY KEY ustunlarini birlashtiradi
+====
+Foreign key ustunlarini birlashtiradi
+====
+++++
+Entity Relationship Diagram (ERD) nima uchun ishlatiladi?
+====
+SQL so'rovlarini yozish uchun
+====
+#Ma'lumotlar bazasi strukturasini ko'rsatish uchun
+====
+Ma'lumotlarni import qilish uchun
+====
+Hisobotlar yaratish uchun
+====
+++++
+ROUND funksiyasi...
+====
+Butun songa yaxlitlaydi
+====
+#Belgilangan aniqlikkacha yaxlitlaydi
+====
+Faqat pastga yaxlitlaydi
+====
+Faqat yuqoriga yaxlitlaydi
+====
+++++
+IN operatori...
+====
+#Ro'yxatdagi qiymatlardan birini qidiradi
+====
+Oraliqni tekshiradi
+====
+Pattern bo'yicha qidiradi
+====
+Ma'lumotlarni tartiblaydi
+====
+++++
+FULL JOIN natijasida:
+====
+Faqat mos keladigan yozuvlar
+====
+Chap jadvaldagi barcha yozuvlar
+====
+O'ng jadvaldagi barcha yozuvlar
+====
+#Ikkala jadvaldagi barcha yozuvlar
+====
+++++
+SQLite boshqa DBMS lardan farqi:
+====
+SQL ni qo'llab-quvvatlamaydi
+====
+#Serverga muhtoj emas
+====
+Ma'lumotlarni saqlay olmaydi
+====
+Faqat bitta jadval bilan ishlaydi
+====
+++++
+EXCEPT operatori...
+====
+#Birinchi so'rovdan ikkinchi so'rovni ayiradi
+====
+Ikkala so'rovni birlashtiradi
+====
+Umumiy qismini qaytaradi
+====
+Ma'lumotlarni filtrlaydi
+====
+++++
+BETWEEN operatori...
+====
+Faqat sonlar bilan ishlaydi
+====
+#Oraliqni tekshiradi
+====
+Pattern bo'yicha qidiradi
+====
+Ma'lumotlarni tartiblaydi
+====
+++++
+LIMIT operatori...
+====
+Ma'lumotlarni filtrlaydi
+====
+#Natijalar sonini cheklaydi
+====
+Ustunlar sonini cheklaydi
+====
+Faqat boshidagi yozuvlarni o'chiradi
+====
+++++
+Qaysi operator katta ma'lumotlar to'plamini guruhlash uchun ishlatiladi?
+====
+WHERE
+====
+HAVING
+====
+#GROUP BY
+====
+ORDER BY
+====
+++++
+INTERSECT operatori...
+====
+Barcha natijalarni qaytaradi
+====
+#Ikkala so'rovda mavjud natijalarni qaytaradi
+====
+Faqat birinchi so'rov natijalarini qaytaradi
+====
+Faqat ikkinchi so'rov natijalarini qaytaradi
+====
+++++
+One-to-one munosabatda:
+====
+#Har bir yozuv faqat bitta yozuv bilan bog'lanadi
+====
+Bir yozuv ko'p yozuvlar bilan bog'lanadi
+====
+Ko'p yozuvlar ko'p yozuvlar bilan bog'lanadi
+====
+Bog'lanish mavjud emas
+====
+++++
+Subquery...
+====
+Faqat WHERE operatori bilan ishlatiladi
+====
+#Boshqa so'rov ichida ishlatiladigan so'rov
+====
+Faqat SELECT operatori bilan ishlatiladi
+====
+Jadvallarni birlashtirish uchun ishlatiladi
+====

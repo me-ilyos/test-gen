@@ -1,0 +1,329 @@
+Python dasturlash tilida o'zgaruvchi e'lon qilishda qaysi kalit so'z ishlatiladi?
+====
+var
+====
+let
+====
+dim
+====
+#Hech qanday kalit so'z kerak emas
+====
+++++
+Binary sanoq sistemasida 1010 soni o'nlik sanoq sistemasida qanday ifodalanadi?
+====
+8
+====
+#10
+====
+12
+====
+20
+====
+++++
+Python dasturlash tilida quyidagi shartli operator qanday yoziladi?
+====
+if (condition) {code}
+====
+if condition then code
+====
+#if condition: code
+====
+if condition -> code
+====
+++++
+Quyidagi operatorlarning qaysi biri pythonda taqqoslash operatori hisoblanadi?
+====
+=
+====
+#==
+====
+:=
+====
+===
+====
+++++
+Python dasturlash tilida float() funksiyasi nima vazifani bajaradi?
+====
+#Butun sonni o'nlik songa o'zgartiradi
+====
+Sonni yaxlitlaydi
+====
+Sonni butun songa o'zgartiradi
+====
+O'nlik sonni matnga o'zgartiradi
+====
+++++
+ASCII kodlash tizimida 'A' harfi qaysi o'nlik songa teng?
+====
+#65
+====
+97
+====
+48
+====
+32
+====
+++++
+Python dasturlash tilida quyidagi ifodaning natijasi nima? len('Hello')
+====
+4
+====
+#5
+====
+6
+====
+Hello
+====
+++++
+Quyidagi operatorlarning qaysi biri Pythonda mantiqiy 'VA' operatori hisoblanadi?
+====
+&
+====
+&&
+====
+#and
+====
+||
+====
+++++
+Binary sanoq sistemasida 1 bayt necha bitdan iborat?
+====
+4
+====
+#8
+====
+16
+====
+32
+====
+++++
+Python dasturlash tilida 'print' funksiyasining asosiy vazifasi nima?
+====
+Printerga chop etish
+====
+#Konsolga ma'lumotlarni chiqarish
+====
+Grafika yaratish
+====
+Fayllarni saqlash
+====
+++++
+Quyidagi Python kodi nima natija qaytaradi? round(3.7)
+====
+3
+====
+#4
+====
+3.7
+====
+3.0
+====
+++++
+Python dasturlash tilida f-string qanday yoziladi?
+====
+${variable}
+====
+%s
+====
+#f'{variable}'
+====
+{variable}
+====
+++++
+Quyidagi operatorlarning qaysi biri Pythonda mantiqiy 'YOKI' operatori hisoblanadi?
+====
+|
+====
+||
+====
+#or
+====
+&
+====
+++++
+ASCII kodlash tizimida '0' raqami qaysi o'nlik songa teng?
+====
+0
+====
+#48
+====
+65
+====
+97
+====
+++++
+Python dasturlash tilida quyidagi ifodaning natijasi nima? int('5') + 2
+====
+52
+====
+#7
+====
+'52'
+====
+Xatolik
+====
+++++
+Binary sanoq sistemasida 0101 soni o'nlik sanoq sistemasida qanday ifodalanadi?
+====
+4
+====
+#5
+====
+6
+====
+8
+====
+++++
+Python dasturlash tilida range(5) funksiyasi qanday sonlar ketma-ketligini hosil qiladi?
+====
+1, 2, 3, 4, 5
+====
+#0, 1, 2, 3, 4
+====
+0, 1, 2, 3, 4, 5
+====
+1, 2, 3, 4
+====
+++++
+Python dasturlash tilida 'Hello'.upper() metodining natijasi nima bo'ladi?
+====
+hello
+====
+#HELLO
+====
+Hello
+====
+hELLO
+====
+++++
+Python'da darajaga ko'tarish uchun qaysi operator ishlatiladi?
+====
+^
+====
+#**
+====
+^^
+====
+//
+====
+++++
+C dasturlash tilida ; belgisining vazifasi nima?
+====
+Kod blokini boshlash
+====
+#Buyruqlar ketma-ketligini yakunlash
+====
+O'zgaruvchini e'lon qilish
+====
+Funksiyani yakunlash
+====
+++++
+O'nlik sanoq sistemasidagi 15 soni binary sanoq sistemasida qanday yoziladi?
+====
+#1111
+====
+1110
+====
+1011
+====
+1101
+====
+++++
+Python dasturlash tilida while tsiklining to'xtash sharti qachon tekshiriladi?
+====
+Har bir iteratsiyadan keyin
+====
+#Har bir iteratsiyadan oldin
+====
+Tsikl oxirida
+====
+Tsikl boshida va oxirida
+====
+++++
+Python dasturlash tilida += operatori nima vazifani bajaradi?
+====
+O'zgaruvchini e'lon qiladi
+====
+Ikki qiymatni solishtiradi
+====
+#O'zgaruvchiga qiymat qo'shib, natijani o'ziga o'zlashtiradi
+====
+O'zgaruvchini o'chiradi
+====
+++++
+Binary sanoq sistemasida 1 va 0 raqamlarini nima deb atash mumkin?
+====
+Byte va bit
+====
+Up va Down
+====
+High va Low
+====
+#On va Off
+====
+++++
+Python dasturlash tilida 'break' operatori nima vazifani bajaradi?
+====
+Dasturni to'xtatadi
+====
+#Tsiklni to'xtatadi
+====
+Funktsiyani to'xtatadi
+====
+Dasturni qayta ishga tushiradi
+====
+++++
+Unicode kodlash tizimi ASCII dan nimasi bilan farq qiladi?
+====
+Faqat lotin harflarini kodlaydi
+====
+#Ko'proq belgilarni kodlay oladi
+====
+Faqat raqamlarni kodlaydi
+====
+Belgilarni kodlamaydi
+====
+++++
+Python dasturlash tilida 'continue' operatori nima vazifani bajaradi?
+====
+Tsiklni to'xtatadi
+====
+#Keyingi iteratsiyaga o'tadi
+====
+Dasturni to'xtatadi
+====
+Tsiklni qaytadan boshlaydi
+====
+++++
+Python dasturlash tilida quyidagi ifodaning natijasi nima? 5 // 2
+====
+2.5
+====
+#2
+====
+3
+====
+2.0
+====
+++++
+Kompyuter xotirasida ma'lumotlar qanday ko'rinishda saqlanadi?
+====
+O'nlik sanoq sistemasida
+====
+#Binary ko'rinishda
+====
+ASCII kodlarda
+====
+Unicode kodlarda
+====
+++++
+C tilida printf funksiyasi uchun qaysi sarlavha fayli kerak?
+====
+<math.h>
+====
+<string.h>
+====
+#<stdio.h>
+====
+<stdlib.h>
+====
