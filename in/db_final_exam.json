@@ -1,0 +1,1867 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Ma'lumotlar bazasi boshqaruv tizimi (DBMS) ning asosiy vazifasi nima?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faqat ma'lumotlarni saqlash"
+        },
+        {
+          "id": 2,
+          "text": "Faqat ma'lumotlarni o'chirish"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni saqlash va boshqarish"
+        },
+        {
+          "id": 4,
+          "text": "Faqat hisobotlar yaratish"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 2,
+      "text": "PRIMARY KEY uchun qaysi shart to'g'ri?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Takrorlanishi mumkin"
+        },
+        {
+          "id": 2,
+          "text": "NULL qiymat qabul qilishi mumkin"
+        },
+        {
+          "id": 3,
+          "text": "Bir nechta ustunlardan iborat bo'lishi mumkin emas"
+        },
+        {
+          "id": 4,
+          "text": "Noyob va NULL bo'lmagan qiymatlarni o'z ichiga olishi kerak"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 3,
+      "text": "SQL da LIKE operatori qanday vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Belgilangan pattern bo'yicha matnni qidiradi"
+        },
+        {
+          "id": 2,
+          "text": "Sonlarni taqqoslaydi"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni tartiblaydi"
+        },
+        {
+          "id": 4,
+          "text": "Ustunlarni birlashtiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 4,
+      "text": "INNER JOIN operatsiyasi qanday natija qaytaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Barcha yozuvlarni"
+        },
+        {
+          "id": 2,
+          "text": "Faqat mos keladigan yozuvlarni"
+        },
+        {
+          "id": 3,
+          "text": "Chap jadvalning barcha yozuvlarini"
+        },
+        {
+          "id": 4,
+          "text": "O'ng jadvalning barcha yozuvlarini"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 5,
+      "text": "GROUP BY operatori bilan qaysi aggregate funksiyani ishlatish mumkin?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "LIKE"
+        },
+        {
+          "id": 2,
+          "text": "BETWEEN"
+        },
+        {
+          "id": 3,
+          "text": "COUNT"
+        },
+        {
+          "id": 4,
+          "text": "LIMIT"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 6,
+      "text": "One-to-many munosabatda:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Bir yozuv faqat bitta yozuv bilan bog'lanishi mumkin"
+        },
+        {
+          "id": 2,
+          "text": "Bir yozuv bir nechta yozuvlar bilan bog'lanishi mumkin"
+        },
+        {
+          "id": 3,
+          "text": "Hamma yozuvlar o'zaro bog'langan"
+        },
+        {
+          "id": 4,
+          "text": "Bog'lanish bo'lmaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 7,
+      "text": "LEFT JOIN va RIGHT JOIN farqi nimada?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Hech qanday farq yo'q"
+        },
+        {
+          "id": 2,
+          "text": "Natijada qaysi jadval to'liq ko'rsatilishida"
+        },
+        {
+          "id": 3,
+          "text": "Ishlash tezligida"
+        },
+        {
+          "id": 4,
+          "text": "Sintaksisida"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 8,
+      "text": "HAVING operatori nima uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Barcha qatorlarni filtrlash uchun"
+        },
+        {
+          "id": 2,
+          "text": "Ma'lumotlarni tartiblash uchun"
+        },
+        {
+          "id": 3,
+          "text": "Guruhlangan ma'lumotlarni filtrlash uchun"
+        },
+        {
+          "id": 4,
+          "text": "Ustunlarni birlashtirish uchun"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 9,
+      "text": "NULL qiymat bu:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "0 qiymati"
+        },
+        {
+          "id": 2,
+          "text": "Bo'sh satr"
+        },
+        {
+          "id": 3,
+          "text": "Mavjud bo'lmagan qiymat"
+        },
+        {
+          "id": 4,
+          "text": "Maxsus belgi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 10,
+      "text": "WHERE va HAVING operatorlari orasidagi farq:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Hech qanday farq yo'q"
+        },
+        {
+          "id": 2,
+          "text": "WHERE guruhlanishdan oldin, HAVING keyin ishlaydi"
+        },
+        {
+          "id": 3,
+          "text": "WHERE tezroq ishlaydi"
+        },
+        {
+          "id": 4,
+          "text": "HAVING ko'proq shartlarni qo'llab-quvvatlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 11,
+      "text": "UNION operatori:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ikki so'rovning natijalarini birlashtiradi"
+        },
+        {
+          "id": 2,
+          "text": "Jadvallarni birlashtiradi"
+        },
+        {
+          "id": 3,
+          "text": "Ustunlarni birlashtiradi"
+        },
+        {
+          "id": 4,
+          "text": "Qatorlarni birlashtiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 12,
+      "text": "Qaysi operator ma'lumotlarni o'sish tartibida saralaydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "DESC"
+        },
+        {
+          "id": 2,
+          "text": "ASC"
+        },
+        {
+          "id": 3,
+          "text": "ORDER"
+        },
+        {
+          "id": 4,
+          "text": "SORT"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 13,
+      "text": "DISTINCT operatori nima vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Barcha qatorlarni qaytaradi"
+        },
+        {
+          "id": 2,
+          "text": "Takrorlanmaydigan qatorlarni qaytaradi"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni tartiblaydi"
+        },
+        {
+          "id": 4,
+          "text": "Guruhlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 14,
+      "text": "Foreign key...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Har doim PRIMARY KEY bo'lishi kerak"
+        },
+        {
+          "id": 2,
+          "text": "Boshqa jadvalning PRIMARY KEY'iga bog'lanadi"
+        },
+        {
+          "id": 3,
+          "text": "NULL bo'lishi mumkin emas"
+        },
+        {
+          "id": 4,
+          "text": "Faqat sonlardan iborat bo'lishi kerak"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 15,
+      "text": "Many-to-many munosabatni yaratish uchun:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Bitta jadval yetarli"
+        },
+        {
+          "id": 2,
+          "text": "Qo'shimcha jadval kerak bo'ladi"
+        },
+        {
+          "id": 3,
+          "text": "Ikkita ustun yetarli"
+        },
+        {
+          "id": 4,
+          "text": "Foreign key yetarli"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 16,
+      "text": "OFFSET operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ma'lumotlarni tartiblaydi"
+        },
+        {
+          "id": 2,
+          "text": "Ma'lum miqdordagi qatorlarni o'tkazib yuboradi"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni filtrlaydi"
+        },
+        {
+          "id": 4,
+          "text": "Ustunlarni birlashtiradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 17,
+      "text": "Qaysi aggregate funktsiya o'rtacha qiymatni hisoblaydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "SUM"
+        },
+        {
+          "id": 2,
+          "text": "COUNT"
+        },
+        {
+          "id": 3,
+          "text": "AVG"
+        },
+        {
+          "id": 4,
+          "text": "MAX"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 18,
+      "text": "NATURAL JOIN...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Bir xil nomli ustunlar bo'yicha avtomatik birlashtiradi"
+        },
+        {
+          "id": 2,
+          "text": "Barcha ustunlarni birlashtiradi"
+        },
+        {
+          "id": 3,
+          "text": "Faqat PRIMARY KEY ustunlarini birlashtiradi"
+        },
+        {
+          "id": 4,
+          "text": "Foreign key ustunlarini birlashtiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 19,
+      "text": "Entity Relationship Diagram (ERD) nima uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "SQL so'rovlarini yozish uchun"
+        },
+        {
+          "id": 2,
+          "text": "Ma'lumotlar bazasi strukturasini ko'rsatish uchun"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni import qilish uchun"
+        },
+        {
+          "id": 4,
+          "text": "Hisobotlar yaratish uchun"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 20,
+      "text": "ROUND funksiyasi...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Butun songa yaxlitlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Belgilangan aniqlikkacha yaxlitlaydi"
+        },
+        {
+          "id": 3,
+          "text": "Faqat pastga yaxlitlaydi"
+        },
+        {
+          "id": 4,
+          "text": "Faqat yuqoriga yaxlitlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 21,
+      "text": "IN operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ro'yxatdagi qiymatlardan birini qidiradi"
+        },
+        {
+          "id": 2,
+          "text": "Oraliqni tekshiradi"
+        },
+        {
+          "id": 3,
+          "text": "Pattern bo'yicha qidiradi"
+        },
+        {
+          "id": 4,
+          "text": "Ma'lumotlarni tartiblaydi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "text": "FULL JOIN natijasida:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faqat mos keladigan yozuvlar"
+        },
+        {
+          "id": 2,
+          "text": "Chap jadvaldagi barcha yozuvlar"
+        },
+        {
+          "id": 3,
+          "text": "O'ng jadvaldagi barcha yozuvlar"
+        },
+        {
+          "id": 4,
+          "text": "Ikkala jadvaldagi barcha yozuvlar"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 23,
+      "text": "SQLite boshqa DBMS lardan farqi:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "SQL ni qo'llab-quvvatlamaydi"
+        },
+        {
+          "id": 2,
+          "text": "Serverga muhtoj emas"
+        },
+        {
+          "id": 3,
+          "text": "Ma'lumotlarni saqlay olmaydi"
+        },
+        {
+          "id": 4,
+          "text": "Faqat bitta jadval bilan ishlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 24,
+      "text": "EXCEPT operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Birinchi so'rovdan ikkinchi so'rovni ayiradi"
+        },
+        {
+          "id": 2,
+          "text": "Ikkala so'rovni birlashtiradi"
+        },
+        {
+          "id": 3,
+          "text": "Umumiy qismini qaytaradi"
+        },
+        {
+          "id": 4,
+          "text": "Ma'lumotlarni filtrlaydi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 25,
+      "text": "BETWEEN operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faqat sonlar bilan ishlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Oraliqni tekshiradi"
+        },
+        {
+          "id": 3,
+          "text": "Pattern bo'yicha qidiradi"
+        },
+        {
+          "id": 4,
+          "text": "Ma'lumotlarni tartiblaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "text": "LIMIT operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ma'lumotlarni filtrlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Natijalar sonini cheklaydi"
+        },
+        {
+          "id": 3,
+          "text": "Ustunlar sonini cheklaydi"
+        },
+        {
+          "id": 4,
+          "text": "Faqat boshidagi yozuvlarni o'chiradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 27,
+      "text": "Qaysi operator katta ma'lumotlar to'plamini guruhlash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "WHERE"
+        },
+        {
+          "id": 2,
+          "text": "HAVING"
+        },
+        {
+          "id": 3,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 4,
+          "text": "ORDER BY"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 28,
+      "text": "INTERSECT operatori...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Barcha natijalarni qaytaradi"
+        },
+        {
+          "id": 2,
+          "text": "Ikkala so'rovda mavjud natijalarni qaytaradi"
+        },
+        {
+          "id": 3,
+          "text": "Faqat birinchi so'rov natijalarini qaytaradi"
+        },
+        {
+          "id": 4,
+          "text": "Faqat ikkinchi so'rov natijalarini qaytaradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 29,
+      "text": "One-to-one munosabatda:",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Har bir yozuv faqat bitta yozuv bilan bog'lanadi"
+        },
+        {
+          "id": 2,
+          "text": "Bir yozuv ko'p yozuvlar bilan bog'lanadi"
+        },
+        {
+          "id": 3,
+          "text": "Ko'p yozuvlar ko'p yozuvlar bilan bog'lanadi"
+        },
+        {
+          "id": 4,
+          "text": "Bog'lanish mavjud emas"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 30,
+      "text": "Subquery...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faqat WHERE operatori bilan ishlatiladi"
+        },
+        {
+          "id": 2,
+          "text": "Boshqa so'rov ichida ishlatiladigan so'rov"
+        },
+        {
+          "id": 3,
+          "text": "Faqat SELECT operatori bilan ishlatiladi"
+        },
+        {
+          "id": 4,
+          "text": "Jadvallarni birlashtirish uchun ishlatiladi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 31,
+      "text": "Normallashtirishning 3-normal formasi (3NF) nima va u qanday afzalliklarga ega?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ma'lumotlarning bir joyda saqlanishini ta'minlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Ma'lumotlar qaytarilishini oldini oladi va o'zgartirishni osonlashtiradi"
+        },
+        {
+          "id": 3,
+          "text": "Tezlikni oshiradi, lekin noaniqlikni keltirib chiqaradi"
+        },
+        {
+          "id": 4,
+          "text": "Ma'lumotlarni shifrlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 32,
+      "text": "SQLda `NATURAL JOIN` va `INNER JOIN` o'rtasidagi asosiy farqlar nimada?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`NATURAL JOIN` mos ustunlarni avtomatik birlashtiradi, `INNER JOIN` aniq ko'rsatilishini talab qiladi"
+        },
+        {
+          "id": 2,
+          "text": "`NATURAL JOIN` tezroq ishlaydi, `INNER JOIN` esa sekinroq"
+        },
+        {
+          "id": 3,
+          "text": "`INNER JOIN` mos ustunlarni avtomatik birlashtiradi, `NATURAL JOIN` aniq ko'rsatilishini talab qiladi"
+        },
+        {
+          "id": 4,
+          "text": "`NATURAL JOIN` va `INNER JOIN` o'rtasida hech qanday farq yo'q"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 33,
+      "text": "Quyidagi SQL bayonotlaridan qaysi biri jadvaldagi ustunni o'zgartirish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`UPDATE COLUMN`"
+        },
+        {
+          "id": 2,
+          "text": "`MODIFY COLUMN`"
+        },
+        {
+          "id": 3,
+          "text": "`CHANGE COLUMN`"
+        },
+        {
+          "id": 4,
+          "text": "`ALTER COLUMN`"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 34,
+      "text": "Quyidagi SQLite saqlash sinflaridan qaysi biri eng ko'p xotira iste'mol qiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`INTEGER`"
+        },
+        {
+          "id": 2,
+          "text": "`TEXT`"
+        },
+        {
+          "id": 3,
+          "text": "`REAL`"
+        },
+        {
+          "id": 4,
+          "text": "`BLOB`"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 35,
+      "text": "Ma'lumotlarni yaxlitligi buzilgan holda o'zgartirish yoki o'chirishning oldini olish uchun qaysi cheklov ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`NOT NULL` cheklovi"
+        },
+        {
+          "id": 2,
+          "text": "`CHECK` cheklovi"
+        },
+        {
+          "id": 3,
+          "text": "`UNIQUE` cheklovi"
+        },
+        {
+          "id": 4,
+          "text": "`FOREIGN KEY` cheklovi"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 36,
+      "text": "Quyidagi SQL bayonotlaridan qaysi biri jadvaldan bir nechta yozuvlarni o'chirish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`DELETE`"
+        },
+        {
+          "id": 2,
+          "text": "`REMOVE`"
+        },
+        {
+          "id": 3,
+          "text": "`DROP`"
+        },
+        {
+          "id": 4,
+          "text": "`CLEAR`"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 37,
+      "text": "Ko'p-ko'pga (many-to-many) bog'lanishni amalga oshirish uchun qanday jadval ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Xaridor jadvali"
+        },
+        {
+          "id": 2,
+          "text": "Buyurtma jadvali"
+        },
+        {
+          "id": 3,
+          "text": "Xaridor-Buyurtma aloqa jadvali"
+        },
+        {
+          "id": 4,
+          "text": "Bog'lanishlar jadvali"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 38,
+      "text": "`GROUP BY` va `HAVING` jumlalari o'rtasidagi asosiy farq nimada?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`GROUP BY` guruhlash shartini, `HAVING` esa filtrni ko'rsatadi"
+        },
+        {
+          "id": 2,
+          "text": "`HAVING` guruhlash shartini, `GROUP BY` esa filtr ko'rsatadi"
+        },
+        {
+          "id": 3,
+          "text": "`GROUP BY` tartiblash uchun, `HAVING` esa yig'indi natijalarini filtrlash uchun ishlatiladi"
+        },
+        {
+          "id": 4,
+          "text": "`GROUP BY` va `HAVING` o'rtasida hech qanday farq yo'q"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 39,
+      "text": "Quyidagi SQLite ma'lumot turlaridan qaysi biri sana va vaqtni saqlash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "`DATE`"
+        },
+        {
+          "id": 2,
+          "text": "`TIME`"
+        },
+        {
+          "id": 3,
+          "text": "`DATETIME`"
+        },
+        {
+          "id": 4,
+          "text": "`TIMESTAMP`"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 40,
+      "text": "Ikki jadval o'rtasidagi aloqani ko'rsatish uchun qaysi chiziqli belgi ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Uzluksiz chiziq"
+        },
+        {
+          "id": 2,
+          "text": "Uzuq chiziq"
+        },
+        {
+          "id": 3,
+          "text": "Ikki tomonlama ko'rsatkichli chiziq"
+        },
+        {
+          "id": 4,
+          "text": "Aylana"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 41,
+      "text": "SQLite'da jadval yaratish uchun qaysi buyruqdan foydalaniladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "NEW TABLE"
+        },
+        {
+          "id": 2,
+          "text": "MAKE TABLE"
+        },
+        {
+          "id": 3,
+          "text": "CREATE TABLE"
+        },
+        {
+          "id": 4,
+          "text": "BUILD TABLE"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 42,
+      "text": "Birlamchi kalitni (PRIMARY KEY) belgilash uchun qaysi constraint ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNIQUE"
+        },
+        {
+          "id": 2,
+          "text": "NOT NULL"
+        },
+        {
+          "id": 3,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 4,
+          "text": "FOREIGN KEY"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 43,
+      "text": "Qaysi SQL buyrug'i jadvalga yangi ma'lumotlarni kiritish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "ADD INTO"
+        },
+        {
+          "id": 2,
+          "text": "PUT INTO"
+        },
+        {
+          "id": 3,
+          "text": "INSERT INTO"
+        },
+        {
+          "id": 4,
+          "text": "UPDATE INTO"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 44,
+      "text": "Qaysi constraint ustun qiymatlarining takrorlanmasligini ta'minlaydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNIQUE"
+        },
+        {
+          "id": 2,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 3,
+          "text": "NOT NULL"
+        },
+        {
+          "id": 4,
+          "text": "CHECK"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 45,
+      "text": "Agar ustun uchun NOT NULL constraint belgilangan bo'lsa, unda...",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Bo'sh qiymat qabul qilishi mumkin"
+        },
+        {
+          "id": 2,
+          "text": "NULL qiymatlarni qabul qilmaydi"
+        },
+        {
+          "id": 3,
+          "text": "Hech qanday ta'siri yo'q"
+        },
+        {
+          "id": 4,
+          "text": "Faqat 0 yoki 1 qiymatlarni qabul qiladi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 46,
+      "text": "Jadval nomini o'zgartirish uchun qaysi SQL buyrug'i ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "RENAME"
+        },
+        {
+          "id": 2,
+          "text": "CHANGE"
+        },
+        {
+          "id": 3,
+          "text": "ALTER TABLE"
+        },
+        {
+          "id": 4,
+          "text": "UPDATE TABLE"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 47,
+      "text": "SQLite'da jadvaldan ustunni o'chirish uchun qaysi buyruq ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "ALTER TABLE ... DROP COLUMN"
+        },
+        {
+          "id": 2,
+          "text": "ALTER COLUMN ... DROP"
+        },
+        {
+          "id": 3,
+          "text": "DROP COLUMN"
+        },
+        {
+          "id": 4,
+          "text": "DELETE COLUMN"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 48,
+      "text": "Qaysi operator yordamida ikki jadval ma'lumotlarini birlashtiramiz?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "JOIN"
+        },
+        {
+          "id": 2,
+          "text": "UNION"
+        },
+        {
+          "id": 3,
+          "text": "MERGE"
+        },
+        {
+          "id": 4,
+          "text": "CONCAT"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 49,
+      "text": "Qaysi JOIN turi umumiy kalitga ega bo'lgan yozuvlarni qaytaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "LEFT JOIN"
+        },
+        {
+          "id": 2,
+          "text": "RIGHT JOIN"
+        },
+        {
+          "id": 3,
+          "text": "OUTER JOIN"
+        },
+        {
+          "id": 4,
+          "text": "INNER JOIN"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 50,
+      "text": "COUNT agregat funksiyasi nima uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ustun qiymatlarini hisoblash"
+        },
+        {
+          "id": 2,
+          "text": "Yozuvlar sonini aniqlash"
+        },
+        {
+          "id": 3,
+          "text": "Ustun nomlarini sanash"
+        },
+        {
+          "id": 4,
+          "text": "Yozuvlarni guruhlash"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 51,
+      "text": "Ma'lumotlarni kamayish tartibida saralash uchun qaysi kalit so'zdan foydalanamiz?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "DECREASE"
+        },
+        {
+          "id": 2,
+          "text": "ASCEND"
+        },
+        {
+          "id": 3,
+          "text": "LOWER"
+        },
+        {
+          "id": 4,
+          "text": "DESC"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 52,
+      "text": "Qaysi aggregate funksiya ustun qiymatlarining o'rtacha qiymatini qaytaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "AVG"
+        },
+        {
+          "id": 2,
+          "text": "SUM"
+        },
+        {
+          "id": 3,
+          "text": "COUNT"
+        },
+        {
+          "id": 4,
+          "text": "MEAN"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 53,
+      "text": "SQLite'da sana ma'lumotlari bilan ishlash uchun qaysi ma'lumot turi ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "DATETIME"
+        },
+        {
+          "id": 2,
+          "text": "DATE"
+        },
+        {
+          "id": 3,
+          "text": "TIME"
+        },
+        {
+          "id": 4,
+          "text": "Maxsus tur talab qilinmaydi"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 54,
+      "text": "Bir nechta ustunlar bo'yicha guruhlab natija olish uchun qaysi klauzadan foydalanamiz?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "ORDER BY"
+        },
+        {
+          "id": 2,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 3,
+          "text": "JOIN BY"
+        },
+        {
+          "id": 4,
+          "text": "WHERE"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 55,
+      "text": "Ma'lumotlarni o'zgartirish uchun qaysi SQL buyrug'i ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "MODIFY"
+        },
+        {
+          "id": 2,
+          "text": "ALTER"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "CHANGE"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 56,
+      "text": "Tashqi kalitni belgilash uchun qaysi constraint ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 2,
+          "text": "UNIQUE"
+        },
+        {
+          "id": 3,
+          "text": "NOT NULL"
+        },
+        {
+          "id": 4,
+          "text": "FOREIGN KEY"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 57,
+      "text": "Qaysi kalit so'z bilan jadvaldan ma'lumotlarni o'chiramiz?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "REMOVE"
+        },
+        {
+          "id": 2,
+          "text": "ERASE"
+        },
+        {
+          "id": 3,
+          "text": "DELETE"
+        },
+        {
+          "id": 4,
+          "text": "CLEAR"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 58,
+      "text": "1:M bog'lanish turiga qaysi misollar to'g'ri keladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Talaba - Guruh"
+        },
+        {
+          "id": 2,
+          "text": "Xodim - Bo'lim"
+        },
+        {
+          "id": 3,
+          "text": "Mahsulot - Buyurtma"
+        },
+        {
+          "id": 4,
+          "text": "Barcha javoblar to'g'ri"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 59,
+      "text": "1:1 bog'lanish turi qaysi holatlarda qo'llanilishi mumkin?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Fuqoro va uning passport ma'lumotlari"
+        },
+        {
+          "id": 2,
+          "text": "Talabalar va o'qiydigan fanlari"
+        },
+        {
+          "id": 3,
+          "text": "Xodimlar va bajargan ishlari"
+        },
+        {
+          "id": 4,
+          "text": "Mijoz va uning manzillari"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 60,
+      "text": "DEFAULT constraint qanday vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Standart qiymat berish"
+        },
+        {
+          "id": 2,
+          "text": "Ma'lumotlarni tekshirish"
+        },
+        {
+          "id": 3,
+          "text": "Ustun nomini o'zgartirish"
+        },
+        {
+          "id": 4,
+          "text": "Tashqi kalitni belgilash"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 60,
+      "text": "Qaysi SQL operatori jadvallardan ma'lumotlarni tanlab olish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "CREATE"
+        },
+        {
+          "id": 2,
+          "text": "INSERT"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "SELECT"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 61,
+      "text": "Qaysi SQL operatori ma'lumotlar bazasidan ma'lumotlarni cheklash uchun qo'llaniladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "LIMIT"
+        },
+        {
+          "id": 2,
+          "text": "WHERE"
+        },
+        {
+          "id": 3,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 4,
+          "text": "HAVING"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 62,
+      "text": "Qaysi SQL operatori ma'lumotlar bazasi jadvaldagi ma'lumotlarni saralay oladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "ORDER BY"
+        },
+        {
+          "id": 2,
+          "text": "COUNT"
+        },
+        {
+          "id": 3,
+          "text": "SUM"
+        },
+        {
+          "id": 4,
+          "text": "AVG"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 63,
+      "text": "Qaysi SQL funksiya ma'lumotlarni yaxlitlash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "ROUND"
+        },
+        {
+          "id": 2,
+          "text": "DISTINCT"
+        },
+        {
+          "id": 3,
+          "text": "LIKE"
+        },
+        {
+          "id": 4,
+          "text": "NOT"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 64,
+      "text": "Qaysi SQL funksiya jadval ustunlaridagi takrorlanuvchi qiymatlarni olib tashlaydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "COUNT"
+        },
+        {
+          "id": 2,
+          "text": "SUM"
+        },
+        {
+          "id": 3,
+          "text": "AVG"
+        },
+        {
+          "id": 4,
+          "text": "DISTINCT"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 65,
+      "text": "Qaysi SQL operatori ikkita jadvalni bog'lash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNION"
+        },
+        {
+          "id": 2,
+          "text": "INTERSECT"
+        },
+        {
+          "id": 3,
+          "text": "INNER JOIN"
+        },
+        {
+          "id": 4,
+          "text": "GROUP BY"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 66,
+      "text": "Qaysi SQL operatori ikkita jadvalni birlashtirib yangi jadval hosil qiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNION"
+        },
+        {
+          "id": 2,
+          "text": "INTERSECT"
+        },
+        {
+          "id": 3,
+          "text": "INNER JOIN"
+        },
+        {
+          "id": 4,
+          "text": "GROUP BY"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 67,
+      "text": "Qaysi SQL operatori ikkita jadvaldagi umumiy qatorlarni oladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNION"
+        },
+        {
+          "id": 2,
+          "text": "INTERSECT"
+        },
+        {
+          "id": 3,
+          "text": "INNER JOIN"
+        },
+        {
+          "id": 4,
+          "text": "GROUP BY"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 68,
+      "text": "Qaysi SQL operatori biriktirma jadvaldagi ma'lumotlarni guruhlash imkonini beradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNION"
+        },
+        {
+          "id": 2,
+          "text": "INTERSECT"
+        },
+        {
+          "id": 3,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 4,
+          "text": "HAVING"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 69,
+      "text": "Qaysi SQL operatori guruhlangan ma'lumotlar ustida shartlarni ko'rsatish uchun qo'llaniladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "UNION"
+        },
+        {
+          "id": 2,
+          "text": "INTERSECT"
+        },
+        {
+          "id": 3,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 4,
+          "text": "HAVING"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 70,
+      "text": "Qaysi SQL operatori bir jadval ma'lumotlarini boshqa jadvaldagi ma'lumotlar bilan solishtirish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "IN"
+        },
+        {
+          "id": 2,
+          "text": "INNER JOIN"
+        },
+        {
+          "id": 3,
+          "text": "GROUP BY"
+        },
+        {
+          "id": 4,
+          "text": "HAVING"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 71,
+      "text": "Asosiy kalit (Primary Key) qanday foyda keltiradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Tezkor ma'lumotlarni saqlash"
+        },
+        {
+          "id": 2,
+          "text": "Jadvallar o'rtasida aloqalar o'rnatish"
+        },
+        {
+          "id": 3,
+          "text": "Takrorlanuvchi ma'lumotlarni olib tashlash"
+        },
+        {
+          "id": 4,
+          "text": "Barcha 3 ta javobda ko'rsatilgan funksiyalarni bajarish"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 72,
+      "text": "Qanday hollarda Normallash (Normalization) qo'llaniladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Jadvallardagi takrorlanuvchi ma'lumotlarni kamaytirish uchun"
+        },
+        {
+          "id": 2,
+          "text": "Jadvallardagi ortiqcha ustunlarni olib tashlash uchun"
+        },
+        {
+          "id": 3,
+          "text": "Jadval nomlarini aniqroq qilish uchun"
+        },
+        {
+          "id": 4,
+          "text": "Jadvallardagi ma'lumotlarni yangilash uchun"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 73,
+      "text": "Qaysi SQL operatori ma'lumotlar bazasiga yangi jadval qo'shish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "CREATE TABLE"
+        },
+        {
+          "id": 2,
+          "text": "INSERT INTO"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "DELETE FROM"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 74,
+      "text": "Qaysi SQL operatori ma'lumotlar bazasidan ma'lumotlarni o'chirish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "CREATE TABLE"
+        },
+        {
+          "id": 2,
+          "text": "INSERT INTO"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "DELETE FROM"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 75,
+      "text": "Qaysi SQL operatori ma'lumotlar bazasida mavjud ma'lumotlarni yangilash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "CREATE TABLE"
+        },
+        {
+          "id": 2,
+          "text": "INSERT INTO"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "DELETE FROM"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 76,
+      "text": "Qaysi SQL operatori boshqa jadvaldagi ma'lumotlarni asosiy jadvaldagi ustunlarga moslash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "FOREIGN KEY"
+        },
+        {
+          "id": 2,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 3,
+          "text": "CHECK"
+        },
+        {
+          "id": 4,
+          "text": "DEFAULT"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 77,
+      "text": "Qaysi SQL operatori jadval uchun majburiy bo'lgan qiymatlar chegarasini belgilash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "FOREIGN KEY"
+        },
+        {
+          "id": 2,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 3,
+          "text": "CHECK"
+        },
+        {
+          "id": 4,
+          "text": "DEFAULT"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 78,
+      "text": "Qaysi SQL operatori jadval ustunlari uchun standart qiymatlarni belgilash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "FOREIGN KEY"
+        },
+        {
+          "id": 2,
+          "text": "PRIMARY KEY"
+        },
+        {
+          "id": 3,
+          "text": "CHECK"
+        },
+        {
+          "id": 4,
+          "text": "DEFAULT"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 79,
+      "text": "Qaysi SQL operatori mavjud jadvallarda yangi ustunlar qo'shish, o'zgartirish yoki o'chirish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "DROP TABLE"
+        },
+        {
+          "id": 2,
+          "text": "ALTER TABLE"
+        },
+        {
+          "id": 3,
+          "text": "ADD COLUMN"
+        },
+        {
+          "id": 4,
+          "text": "RENAME COLUMN"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 80,
+      "text": "Qaysi SQL operatori mavjud jadvallardagi ma'lumotlarni qidirish va yangilash uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "CREATE TABLE"
+        },
+        {
+          "id": 2,
+          "text": "INSERT INTO"
+        },
+        {
+          "id": 3,
+          "text": "UPDATE"
+        },
+        {
+          "id": 4,
+          "text": "DELETE FROM"
+        }
+      ],
+      "correct": 3
+    }
+  ]
+}

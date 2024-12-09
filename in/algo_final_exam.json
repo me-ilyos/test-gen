@@ -1,0 +1,1885 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Python dasturlash tilida o'zgaruvchi e'lon qilishda qaysi kalit so'z ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "var"
+        },
+        {
+          "id": 2,
+          "text": "let"
+        },
+        {
+          "id": 3,
+          "text": "dim"
+        },
+        {
+          "id": 4,
+          "text": "Hech qanday kalit so'z kerak emas"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 2,
+      "text": "Binary sanoq sistemasida 1010 soni o'nlik sanoq sistemasida qanday ifodalanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "8"
+        },
+        {
+          "id": 2,
+          "text": "10"
+        },
+        {
+          "id": 3,
+          "text": "12"
+        },
+        {
+          "id": 4,
+          "text": "20"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 3,
+      "text": "Python dasturlash tilida quyidagi shartli operator qanday yoziladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "if (condition) {code}"
+        },
+        {
+          "id": 2,
+          "text": "if condition then code"
+        },
+        {
+          "id": 3,
+          "text": "if condition: code"
+        },
+        {
+          "id": 4,
+          "text": "if condition -> code"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 4,
+      "text": "Quyidagi operatorlarning qaysi biri pythonda taqqoslash operatori hisoblanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "="
+        },
+        {
+          "id": 2,
+          "text": "=="
+        },
+        {
+          "id": 3,
+          "text": ":="
+        },
+        {
+          "id": 4,
+          "text": "==="
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 5,
+      "text": "Python dasturlash tilida float() funksiyasi nima vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Butun sonni o'nlik songa o'zgartiradi"
+        },
+        {
+          "id": 2,
+          "text": "Sonni yaxlitlaydi"
+        },
+        {
+          "id": 3,
+          "text": "Sonni butun songa o'zgartiradi"
+        },
+        {
+          "id": 4,
+          "text": "O'nlik sonni matnga o'zgartiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "text": "ASCII kodlash tizimida 'A' harfi qaysi o'nlik songa teng?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "65"
+        },
+        {
+          "id": 2,
+          "text": "97"
+        },
+        {
+          "id": 3,
+          "text": "48"
+        },
+        {
+          "id": 4,
+          "text": "32"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "text": "Python dasturlash tilida quyidagi ifodaning natijasi nima? len('Hello')",
+      "variants": [
+        {
+          "id": 1,
+          "text": "4"
+        },
+        {
+          "id": 2,
+          "text": "5"
+        },
+        {
+          "id": 3,
+          "text": "6"
+        },
+        {
+          "id": 4,
+          "text": "Hello"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 8,
+      "text": "Quyidagi operatorlarning qaysi biri Pythonda mantiqiy 'VA' operatori hisoblanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "&"
+        },
+        {
+          "id": 2,
+          "text": "&&"
+        },
+        {
+          "id": 3,
+          "text": "and"
+        },
+        {
+          "id": 4,
+          "text": "||"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 9,
+      "text": "Binary sanoq sistemasida 1 bayt necha bitdan iborat?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "4"
+        },
+        {
+          "id": 2,
+          "text": "8"
+        },
+        {
+          "id": 3,
+          "text": "16"
+        },
+        {
+          "id": 4,
+          "text": "32"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 10,
+      "text": "Python dasturlash tilida 'print' funksiyasining asosiy vazifasi nima?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Printerga chop etish"
+        },
+        {
+          "id": 2,
+          "text": "Konsolga ma'lumotlarni chiqarish"
+        },
+        {
+          "id": 3,
+          "text": "Grafika yaratish"
+        },
+        {
+          "id": 4,
+          "text": "Fayllarni saqlash"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 11,
+      "text": "Quyidagi Python kodi nima natija qaytaradi? round(3.7)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "3"
+        },
+        {
+          "id": 2,
+          "text": "4"
+        },
+        {
+          "id": 3,
+          "text": "3.7"
+        },
+        {
+          "id": 4,
+          "text": "3.0"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 12,
+      "text": "Python dasturlash tilida f-string qanday yoziladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "${variable}"
+        },
+        {
+          "id": 2,
+          "text": "%s"
+        },
+        {
+          "id": 3,
+          "text": "f'{variable}'"
+        },
+        {
+          "id": 4,
+          "text": "{variable}"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 13,
+      "text": "Quyidagi operatorlarning qaysi biri Pythonda mantiqiy 'YOKI' operatori hisoblanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "|"
+        },
+        {
+          "id": 2,
+          "text": "||"
+        },
+        {
+          "id": 3,
+          "text": "or"
+        },
+        {
+          "id": 4,
+          "text": "&"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 14,
+      "text": "ASCII kodlash tizimida '0' raqami qaysi o'nlik songa teng?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "0"
+        },
+        {
+          "id": 2,
+          "text": "48"
+        },
+        {
+          "id": 3,
+          "text": "65"
+        },
+        {
+          "id": 4,
+          "text": "97"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 15,
+      "text": "Python dasturlash tilida quyidagi ifodaning natijasi nima? int('5') + 2",
+      "variants": [
+        {
+          "id": 1,
+          "text": "52"
+        },
+        {
+          "id": 2,
+          "text": "7"
+        },
+        {
+          "id": 3,
+          "text": "'52'"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 16,
+      "text": "Binary sanoq sistemasida 0101 soni o'nlik sanoq sistemasida qanday ifodalanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "4"
+        },
+        {
+          "id": 2,
+          "text": "5"
+        },
+        {
+          "id": 3,
+          "text": "6"
+        },
+        {
+          "id": 4,
+          "text": "8"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 17,
+      "text": "Python dasturlash tilida range(5) funksiyasi qanday sonlar ketma-ketligini hosil qiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "1, 2, 3, 4, 5"
+        },
+        {
+          "id": 2,
+          "text": "0, 1, 2, 3, 4"
+        },
+        {
+          "id": 3,
+          "text": "0, 1, 2, 3, 4, 5"
+        },
+        {
+          "id": 4,
+          "text": "1, 2, 3, 4"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 18,
+      "text": "Python dasturlash tilida 'Hello'.upper() metodining natijasi nima bo'ladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "hello"
+        },
+        {
+          "id": 2,
+          "text": "HELLO"
+        },
+        {
+          "id": 3,
+          "text": "Hello"
+        },
+        {
+          "id": 4,
+          "text": "hELLO"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 19,
+      "text": "Python'da darajaga ko'tarish uchun qaysi operator ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "^"
+        },
+        {
+          "id": 2,
+          "text": "**"
+        },
+        {
+          "id": 3,
+          "text": "^^"
+        },
+        {
+          "id": 4,
+          "text": "//"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 20,
+      "text": "C dasturlash tilida ; belgisining vazifasi nima?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Kod blokini boshlash"
+        },
+        {
+          "id": 2,
+          "text": "Buyruqlar ketma-ketligini yakunlash"
+        },
+        {
+          "id": 3,
+          "text": "O'zgaruvchini e'lon qilish"
+        },
+        {
+          "id": 4,
+          "text": "Funksiyani yakunlash"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 21,
+      "text": "O'nlik sanoq sistemasidagi 15 soni binary sanoq sistemasida qanday yoziladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "1111"
+        },
+        {
+          "id": 2,
+          "text": "1110"
+        },
+        {
+          "id": 3,
+          "text": "1011"
+        },
+        {
+          "id": 4,
+          "text": "1101"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "text": "Python dasturlash tilida while tsiklining to'xtash sharti qachon tekshiriladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Har bir iteratsiyadan keyin"
+        },
+        {
+          "id": 2,
+          "text": "Har bir iteratsiyadan oldin"
+        },
+        {
+          "id": 3,
+          "text": "Tsikl oxirida"
+        },
+        {
+          "id": 4,
+          "text": "Tsikl boshida va oxirida"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 23,
+      "text": "Python dasturlash tilida += operatori nima vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "O'zgaruvchini e'lon qiladi"
+        },
+        {
+          "id": 2,
+          "text": "Ikki qiymatni solishtiradi"
+        },
+        {
+          "id": 3,
+          "text": "O'zgaruvchiga qiymat qo'shib, natijani o'ziga o'zlashtiradi"
+        },
+        {
+          "id": 4,
+          "text": "O'zgaruvchini o'chiradi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 24,
+      "text": "Binary sanoq sistemasida 1 va 0 raqamlarini nima deb atash mumkin?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Byte va bit"
+        },
+        {
+          "id": 2,
+          "text": "Up va Down"
+        },
+        {
+          "id": 3,
+          "text": "High va Low"
+        },
+        {
+          "id": 4,
+          "text": "On va Off"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 25,
+      "text": "Python dasturlash tilida 'break' operatori nima vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Dasturni to'xtatadi"
+        },
+        {
+          "id": 2,
+          "text": "Tsiklni to'xtatadi"
+        },
+        {
+          "id": 3,
+          "text": "Funktsiyani to'xtatadi"
+        },
+        {
+          "id": 4,
+          "text": "Dasturni qayta ishga tushiradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "text": "Unicode kodlash tizimi ASCII dan nimasi bilan farq qiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faqat lotin harflarini kodlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Ko'proq belgilarni kodlay oladi"
+        },
+        {
+          "id": 3,
+          "text": "Faqat raqamlarni kodlaydi"
+        },
+        {
+          "id": 4,
+          "text": "Belgilarni kodlamaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 27,
+      "text": "Python dasturlash tilida 'continue' operatori nima vazifani bajaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Tsiklni to'xtatadi"
+        },
+        {
+          "id": 2,
+          "text": "Keyingi iteratsiyaga o'tadi"
+        },
+        {
+          "id": 3,
+          "text": "Dasturni to'xtatadi"
+        },
+        {
+          "id": 4,
+          "text": "Tsiklni qaytadan boshlaydi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 28,
+      "text": "Python dasturlash tilida quyidagi ifodaning natijasi nima? 5 // 2",
+      "variants": [
+        {
+          "id": 1,
+          "text": "2.5"
+        },
+        {
+          "id": 2,
+          "text": "2"
+        },
+        {
+          "id": 3,
+          "text": "3"
+        },
+        {
+          "id": 4,
+          "text": "2.0"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 29,
+      "text": "Kompyuter xotirasida ma'lumotlar qanday ko'rinishda saqlanadi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "O'nlik sanoq sistemasida"
+        },
+        {
+          "id": 2,
+          "text": "Binary ko'rinishda"
+        },
+        {
+          "id": 3,
+          "text": "ASCII kodlarda"
+        },
+        {
+          "id": 4,
+          "text": "Unicode kodlarda"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 30,
+      "text": "C tilida printf funksiyasi uchun qaysi sarlavha fayli kerak?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "<math.h>"
+        },
+        {
+          "id": 2,
+          "text": "<string.h>"
+        },
+        {
+          "id": 3,
+          "text": "<stdio.h>"
+        },
+        {
+          "id": 4,
+          "text": "<stdlib.h>"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 31,
+      "text": "Agar funksiya hech qanday qiymat qaytarmasa, u qanday qiymatni qaytaradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "0"
+        },
+        {
+          "id": 2,
+          "text": "False"
+        },
+        {
+          "id": 3,
+          "text": "None"
+        },
+        {
+          "id": 4,
+          "text": "Hech qanday qiymat qaytarmaydi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 32,
+      "text": "Pythonda quyidagi kodning natijasi nima? [x for x in range(10) if x % 2 if x > 5]",
+      "variants": [
+        {
+          "id": 1,
+          "text": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": 2,
+          "text": [
+            1,
+            3,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "id": 3,
+          "text": [
+            7,
+            9
+          ]
+        },
+        {
+          "id": 4,
+          "text": [
+            6,
+            8
+          ]
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 33,
+      "text": "Pythonda rekursiv funksiyalarning maksimal chuqurligini nima belgilaydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Operativ xotira"
+        },
+        {
+          "id": 2,
+          "text": "Protsessor tezligi"
+        },
+        {
+          "id": 3,
+          "text": "Stek xotirasi"
+        },
+        {
+          "id": 4,
+          "text": "Tarmoq kengligi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 34,
+      "text": "Quyidagi Python kodida xato bormi? a, b = 1, 2, 3",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ha, o'zgaruvchilar soniga mos qiymatlar berilmagan"
+        },
+        {
+          "id": 2,
+          "text": "Ha, o'zgaruvchilar bo'sh qoldirilgan"
+        },
+        {
+          "id": 3,
+          "text": "Yo'q, bu to'g'ri kod"
+        },
+        {
+          "id": 4,
+          "text": "Ha, o'zgaruvchilar nomi noto'g'ri berilgan"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 35,
+      "text": "Lambda funksiyalari qachon ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Kichik bir martalik funksiyalar uchun"
+        },
+        {
+          "id": 2,
+          "text": "Rekursiv funksiyalar uchun"
+        },
+        {
+          "id": 3,
+          "text": "O'zgaruvchan argumentlar uchun"
+        },
+        {
+          "id": 4,
+          "text": "Sinflarni yaratishda"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 36,
+      "text": "Quyidagi funksiya nima qiladi? def f(value, arr=[]): arr.append(value) return arr",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Massivni filtrlash"
+        },
+        {
+          "id": 2,
+          "text": "Massiv elementlarini almashtirish"
+        },
+        {
+          "id": 3,
+          "text": "Massivga element qo'shish"
+        },
+        {
+          "id": 4,
+          "text": "Massiv elementini o'chirish"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 37,
+      "text": "Quyidagi kodning natijasi nima bo'ladi? x = {1, 2, 3} y = {3, 4, 5} print(x & y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "{1, 2}"
+        },
+        {
+          "id": 2,
+          "text": "{3}"
+        },
+        {
+          "id": 3,
+          "text": "{1, 2, 3, 4, 5}"
+        },
+        {
+          "id": 4,
+          "text": "set()"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 38,
+      "text": "Quyidagi funksiya nima vazifani bajaradi?  def f(x, y=[]):   y.append(x)   return sum(y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Berilgan sonlarning yig'indisini hisoblaydi"
+        },
+        {
+          "id": 2,
+          "text": "Ro'yxatdagi elementlar yig'indisini hisoblaydi"
+        },
+        {
+          "id": 3,
+          "text": "Ro'yxatga yangi element qo'shadi va yig'indisini hisoblaydi"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik beradi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 39,
+      "text": "Quyidagi kod nima maqsadda ishlatiladi?  try:  # kod except: # xatolik yuz berganda bajariladi  else: # xatolik yuz bermasa bajariladi  finally: # har doim bajariladi",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Xatolarni boshqarish uchun"
+        },
+        {
+          "id": 2,
+          "text": "Funksiya yaratish uchun"
+        },
+        {
+          "id": 3,
+          "text": "Shart tekshirish uchun"
+        },
+        {
+          "id": 4,
+          "text": "Tsikl yaratish uchun"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 40,
+      "text": "Quyidagi funksiya nima qiladi?  def f(n):    for i in range(2, int(n0.5)+1):      if n % i == 0:        return False    return True",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Sonning factoriali"
+        },
+        {
+          "id": 2,
+          "text": "Sonning ildizi"
+        },
+        {
+          "id": 3,
+          "text": "Sonning kvadrati"
+        },
+        {
+          "id": 4,
+          "text": "Sonning tub yoki tub emasligini aniqlaydi"
+        }
+      ],
+      "correct": 4
+    },
+    {
+      "id": 41,
+      "text": "Quyidagi kodning natijasi nima bo'ladi?  x = ['ab', 'cd'] for i in x:    i.upper()  print(x)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "['ab', 'cd']"
+        },
+        {
+          "id": 2,
+          "text": "['AB', 'CD']"
+        },
+        {
+          "id": 3,
+          "text": "['Ab', 'Cd']"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik beradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 42,
+      "text": "Pythonda quyidagi operatorlar ketma-ketligining natijasi qanday bo'ladi?  5 + 3 * 2 ** 2",
+      "variants": [
+        {
+          "id": 1,
+          "text": "17"
+        },
+        {
+          "id": 2,
+          "text": "22"
+        },
+        {
+          "id": 3,
+          "text": "13"
+        },
+        {
+          "id": 4,
+          "text": "8"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 43,
+      "text": "Quyidagi kodning natijasi nima? x = {i: i**2 for i in range(5)}  print(x.get(3, 0))",
+      "variants": [
+        {
+          "id": 1,
+          "text": "0"
+        },
+        {
+          "id": 2,
+          "text": "3"
+        },
+        {
+          "id": 3,
+          "text": "9"
+        },
+        {
+          "id": 4,
+          "text": "KeyError"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 44,
+      "text": "Quyidagi funksiya nima vazifani bajaradi? def f(x):  res = 0   for i in range(x):    res += i   return res",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faktorial hisoblab beradi"
+        },
+        {
+          "id": 2,
+          "text": "Summani hisoblab beradi"
+        },
+        {
+          "id": 3,
+          "text": "Sonni 2 ga ko'paytiradi"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 45,
+      "text": "Quyidagi kodda xatolik bormi? try:  x = 1/0  except ZeroDivisionError:  print('Nolga bo'lish mumkin emas')",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ha, nolga bo'lish xatoligi boshqarilmagan"
+        },
+        {
+          "id": 2,
+          "text": "Yo'q, xatolik to'g'ri boshqarilgan"
+        },
+        {
+          "id": 3,
+          "text": "Ha, ZeroDivisionError o'rniga Exception ishlatish kerak"
+        },
+        {
+          "id": 4,
+          "text": "Ha, except dan keyin else ishlatilishi shart"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 46,
+      "text": "Quyidagi funksiya nima vazifani bajaradi?  def f(n):    return n and n * f(n - 1)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Fibonacci sonlarini hisoblaydi"
+        },
+        {
+          "id": 2,
+          "text": "Faktorialni hisoblaydi"
+        },
+        {
+          "id": 3,
+          "text": "Mukammal sonni topadi"
+        },
+        {
+          "id": 4,
+          "text": "Tub sonni topadi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 47,
+      "text": "Quyidagi Python kodi nima natija beradi?  x = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']  y = set(x)  y.add('z')  print(y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "{'a', 'b', 'c', 'd', 'm', 'n'}"
+        },
+        {
+          "id": 2,
+          "text": "{'a', 'b', 'c', 'b', 'd', 'm', 'n', 'n', 'z'}"
+        },
+        {
+          "id": 3,
+          "text": "{'z', 'a', 'b', 'c', 'd', 'm', 'n'}"
+        },
+        {
+          "id": 4,
+          "text": "TypeError: unhashable type: 'list'"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 48,
+      "text": "Quyidagi kodni ishga tushirganda qanday xatolik yuz beradi?  def f(x, y=10):    if y == 1:      return x    return x + f(x, y-1)  print(f(5))",
+      "variants": [
+        {
+          "id": 1,
+          "text": "TypeError"
+        },
+        {
+          "id": 2,
+          "text": "ValueError"
+        },
+        {
+          "id": 3,
+          "text": "RecursionError"
+        },
+        {
+          "id": 4,
+          "text": "Hech qanday xato yuz bermaydi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 49,
+      "text": "Quyidagi kod nima natija qaytaradi?  def f(x, list=[]):    for i in range(x):      list.append(i*i)    print(list)   f(2)  f(3, [3, 2, 1])  f(3)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "[0, 1, 4] [3, 2, 1, 0, 1, 4] [0, 1, 4]"
+        },
+        {
+          "id": 2,
+          "text": "[0, 1] [3, 2, 1, 0, 1, 4] [0, 1, 4]"
+        },
+        {
+          "id": 3,
+          "text": "[0, 1] [3, 2, 1, 0, 1, 4] [0, 1, 4, 0, 1, 4]"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 49,
+      "text": "Quyidagi Python kodi nima natija beradi?  x = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']  y = set(x)  y.add('z')  print(y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "{'a', 'b', 'c', 'd', 'm', 'n'}"
+        },
+        {
+          "id": 2,
+          "text": "{'a', 'b', 'c', 'b', 'd', 'm', 'n', 'n', 'z'}"
+        },
+        {
+          "id": 3,
+          "text": "{'z', 'a', 'b', 'c', 'd', 'm', 'n'}"
+        },
+        {
+          "id": 4,
+          "text": "TypeError: unhashable type: 'list'"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 50,
+      "text": "Quyidagi kod nima natija qaytaradi?  a, b = 1, 2  a, b = b, a  print(a, b)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "1 2"
+        },
+        {
+          "id": 2,
+          "text": "2 1"
+        },
+        {
+          "id": 3,
+          "text": "2 2"
+        },
+        {
+          "id": 4,
+          "text": "1 1"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 51,
+      "text": "Quyidagi kod nima maqsadda ishlatiladi?  my_list = [1, 2, 3]  if len(my_list) > 2: print(my_list[0])",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ro'yxat uzunligini tekshirish"
+        },
+        {
+          "id": 2,
+          "text": "Ro'yxatning birinchi elementini olish"
+        },
+        {
+          "id": 3,
+          "text": "Ro'yxatning oxirgi elementini olish"
+        },
+        {
+          "id": 4,
+          "text": "Ro'yxatni tozalash"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 52,
+      "text": "Quyidagi metod nima vazifani bajaradi?  ' '.join(['a', 'b', 'c'])",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Ro'yxatni matn ko'rinishiga o'tkazadi"
+        },
+        {
+          "id": 2,
+          "text": "Ro'yxatni saralaydi"
+        },
+        {
+          "id": 3,
+          "text": "Ro'yxatni tozalaydi"
+        },
+        {
+          "id": 4,
+          "text": "Ro'yxat uzunligini qaytaradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 53,
+      "text": "Quyidagi kod qanday natija qaytaradi?  x = 'abcdef'  i = 'a'  for i in x:    print(i, end=' ')",
+      "variants": [
+        {
+          "id": 1,
+          "text": "a b c d e f"
+        },
+        {
+          "id": 2,
+          "text": "a a a a a a"
+        },
+        {
+          "id": 3,
+          "text": "f f f f f f"
+        },
+        {
+          "id": 4,
+          "text": "a"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 54,
+      "text": "Quyidagi funksiya nima vazifani bajaradi?  def f(names):    for name in names:        print(name)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Berilgan ism ro'yxatini saralaydi"
+        },
+        {
+          "id": 2,
+          "text": "Berilgan ism ro'yxatini teskari tartibda chiqaradi"
+        },
+        {
+          "id": 3,
+          "text": "Berilgan ism ro'yxatidagi har bir ismni alohida qatorga chiqaradi"
+        },
+        {
+          "id": 4,
+          "text": "Berilgan ism ro'yxatidagi elementlar sonini qaytaradi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 55,
+      "text": "Quyidagi kod nima natija beradi?  x = [1, 2, 3]  x.remove(2)  print(x)",
+      "variants": [
+        {
+          "id": 1,
+          "text": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "text": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": 3,
+          "text": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 56,
+      "text": "Quyidagi funksiya nima vazifani bajaradi?  def f(x):    return lambda a: x + a",
+      "variants": [
+        {
+          "id": 1,
+          "text": "x ga a ni qo'shadi"
+        },
+        {
+          "id": 2,
+          "text": "Ikkita son yig'indisini hisoblaydigan funksiya yaratadi"
+        },
+        {
+          "id": 3,
+          "text": "x va a ni taqqoslaydi"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 57,
+      "text": "Quyidagi kod nima natija qaytaradi?  x = 'abc' * 3  print(x)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "'aaa'"
+        },
+        {
+          "id": 2,
+          "text": "'abcabcabc'"
+        },
+        {
+          "id": 3,
+          "text": "'aaabbbccc'"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 58,
+      "text": "Quyidagi kod qanday natija qaytaradi?  x = [0, 1, [2]]  x[2][0] = 3  print(x)",
+      "variants": [
+        {
+          "id": 1,
+          "text": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "text": [
+            0,
+            1,
+            [
+              3
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "text": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 59,
+      "text": "Qaysi metod ro'yxat ichidagi elementni o'chiradi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "delete()"
+        },
+        {
+          "id": 2,
+          "text": "remove()"
+        },
+        {
+          "id": 3,
+          "text": "pop()"
+        },
+        {
+          "id": 4,
+          "text": "clear()"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 60,
+      "text": "Quyidagi funksiya nima vazifani bajaradi?  def sum_digits(num):    if num < 10:        return num    else:        return num % 10 + sum_digits(num // 10)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Sonni raqamlari yig'indisini topadi"
+        },
+        {
+          "id": 2,
+          "text": "Sonni 10 ga bo'lib, qoldig'ini qaytaradi"
+        },
+        {
+          "id": 3,
+          "text": "Sonni teskarisiga o'zgartiradi"
+        },
+        {
+          "id": 4,
+          "text": "Sonni juft yoki toqligini tekshiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 61,
+      "text": "Quyidagi kod nima maqsadda ishlatiladi?  file = open('example.txt', 'r')",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Faylni o'qish uchun ochadi"
+        },
+        {
+          "id": 2,
+          "text": "Faylni yozish uchun ochadi"
+        },
+        {
+          "id": 3,
+          "text": "Yangi fayl yaratish uchun ochadi"
+        },
+        {
+          "id": 4,
+          "text": "Faylni o'chirish uchun ochadi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 62,
+      "text": "Quyidagi metod qanday vazifani bajaradi?  ' Hello '.strip()",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Matnning boshidagi va oxiridagi bo'sh joylarni olib tashlaydi"
+        },
+        {
+          "id": 2,
+          "text": "Matnni bosh harfga o'zgartiradi"
+        },
+        {
+          "id": 3,
+          "text": "Matndagi barcha harflarni kichik harfga o'zgartiradi"
+        },
+        {
+          "id": 4,
+          "text": "Matndagi barcha harflarni katta harfga o'zgartiradi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 63,
+      "text": "Pythonda o'zgaruvchilar nomini belgilashda qaysi belgilardan foydalanish mumkin emas?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "_"
+        },
+        {
+          "id": 2,
+          "text": "$"
+        },
+        {
+          "id": 3,
+          "text": "A-z"
+        },
+        {
+          "id": 4,
+          "text": "0-9"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 64,
+      "text": "Pythonda quyidagi kod nima natija qaytaradi?  print(2 ** 3)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "6"
+        },
+        {
+          "id": 2,
+          "text": "8"
+        },
+        {
+          "id": 3,
+          "text": "9"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 65,
+      "text": "Pythonda quyidagi kod nima natija qaytaradi?  print(10 % 3)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "0"
+        },
+        {
+          "id": 2,
+          "text": "1"
+        },
+        {
+          "id": 3,
+          "text": "3.33"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 66,
+      "text": "Quyidagi kod nima vazifani bajaradi?  my_list = [1, 2, 3]",
+      "variants": [
+        {
+          "id": 1,
+          "text": "O'zgaruvchi yaratadi"
+        },
+        {
+          "id": 2,
+          "text": "Funksiya yaratadi"
+        },
+        {
+          "id": 3,
+          "text": "Ro'yxat yaratadi"
+        },
+        {
+          "id": 4,
+          "text": "Lug'at yaratadi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 68,
+      "text": "Quyidagi kod qanday natija qaytaradi?  x = 5  y = 10  print(x < y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "True"
+        },
+        {
+          "id": 2,
+          "text": "False"
+        },
+        {
+          "id": 3,
+          "text": "5"
+        },
+        {
+          "id": 4,
+          "text": "10"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 69,
+      "text": "Quyidagi kod qanday natija qaytaradi?  x, y = 2, 4  print(x * y)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "6"
+        },
+        {
+          "id": 2,
+          "text": "8"
+        },
+        {
+          "id": 3,
+          "text": "24"
+        },
+        {
+          "id": 4,
+          "text": "Xatolik yuz beradi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 70,
+      "text": "Pythonda quyidagi kod qanday nomlanadi?  for i in range(5):    print(i)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Shart operatori"
+        },
+        {
+          "id": 2,
+          "text": "Takrorlash operatori"
+        },
+        {
+          "id": 3,
+          "text": "Funksiya"
+        },
+        {
+          "id": 4,
+          "text": "O'zgaruvchi"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 71,
+      "text": "Pythonda qaysi funksiya foydalanuvchidan ma'lumot kiritishni so'raydi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "input()"
+        },
+        {
+          "id": 2,
+          "text": "print()"
+        },
+        {
+          "id": 3,
+          "text": "get()"
+        },
+        {
+          "id": 4,
+          "text": "read()"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 72,
+      "text": "Pythonda qaysi funksiya matnni konsolga chiqarish uchun ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "input()"
+        },
+        {
+          "id": 2,
+          "text": "print()"
+        },
+        {
+          "id": 3,
+          "text": "output()"
+        },
+        {
+          "id": 4,
+          "text": "console()"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 73,
+      "text": "Pythonda quyidagi kod nima natija qaytaradi?  print(type(5))",
+      "variants": [
+        {
+          "id": 1,
+          "text": "<class 'int'>"
+        },
+        {
+          "id": 2,
+          "text": "<class 'float'>"
+        },
+        {
+          "id": 3,
+          "text": "<class 'str'>"
+        },
+        {
+          "id": 4,
+          "text": "<class 'bool'>"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 74,
+      "text": "Pythonda ikkita matnni qo'shish uchun qaysi operator ishlatiladi?",
+      "variants": [
+        {
+          "id": 1,
+          "text": "*"
+        },
+        {
+          "id": 2,
+          "text": "-"
+        },
+        {
+          "id": 3,
+          "text": "+"
+        },
+        {
+          "id": 4,
+          "text": "/"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 75,
+      "text": "Pythonda quyidagi kod nima natija qaytaradi?  print(bool(0))",
+      "variants": [
+        {
+          "id": 1,
+          "text": "True"
+        },
+        {
+          "id": 2,
+          "text": "False"
+        },
+        {
+          "id": 3,
+          "text": "0"
+        },
+        {
+          "id": 4,
+          "text": "1"
+        }
+      ],
+      "correct": 2
+    },
+    {
+      "id": 76,
+      "text": "Quyidagi kod nima vazifani bajaradi?  if x > 0:    print('Musbat')",
+      "variants": [
+        {
+          "id": 1,
+          "text": "Shart tekshiradi"
+        },
+        {
+          "id": 2,
+          "text": "Takrorlash bajaradi"
+        },
+        {
+          "id": 3,
+          "text": "Funksiya yaratadi"
+        },
+        {
+          "id": 4,
+          "text": "O'zgaruvchi e'lon qiladi"
+        }
+      ],
+      "correct": 1
+    },
+    {
+      "id": 77,
+      "text": "Quyidagi kod nima natija qaytaradi?  x = 5  x += 3  print(x)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "5"
+        },
+        {
+          "id": 2,
+          "text": "3"
+        },
+        {
+          "id": 3,
+          "text": "8"
+        },
+        {
+          "id": 4,
+          "text": "15"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 78,
+      "text": "Quyidagi kod qanday nomlanadi?  def add_numbers(a, b):    return a + b",
+      "variants": [
+        {
+          "id": 1,
+          "text": "If iborasi"
+        },
+        {
+          "id": 2,
+          "text": "For tsikli"
+        },
+        {
+          "id": 3,
+          "text": "Funksiya"
+        },
+        {
+          "id": 4,
+          "text": "O'zgaruvchi"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 79,
+      "text": "Pythonda quyidagi kod qanday nomlanadi?  my_tuple = (1, 2, 3)",
+      "variants": [
+        {
+          "id": 1,
+          "text": "O'zgaruvchi"
+        },
+        {
+          "id": 2,
+          "text": "Ro'yxat"
+        },
+        {
+          "id": 3,
+          "text": "Kortej"
+        },
+        {
+          "id": 4,
+          "text": "Lug'at"
+        }
+      ],
+      "correct": 3
+    },
+    {
+      "id": 80,
+      "text": "Quyidagi operatorlardan qaysi biri taqqoslash operatori emas?",
+      "variants": [
+        {
+          "id": 1,
+          "text": ">"
+        },
+        {
+          "id": 2,
+          "text": "<"
+        },
+        {
+          "id": 3,
+          "text": "="
+        },
+        {
+          "id": 4,
+          "text": "!="
+        }
+      ],
+      "correct": 3
+    }
+  ]
+}
