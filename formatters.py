@@ -44,7 +44,6 @@ def create_word_document(json_data, output_path):
         table = doc.add_table(rows=num_variants + 1, cols=1)
         table.style = "Table Grid"
 
-        # Just include the question text without the number
         question_cell = table.cell(0, 0)
         question_cell.text = question["text"]
 

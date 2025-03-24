@@ -25,10 +25,8 @@ def parse_args():
         print(f"Error: Input file {input_path} does not exist")
         sys.exit(1)
 
-    # Default to all formats if no option specified
     formats = {"student": True, "program": True, "word": True}
 
-    # Parse additional arguments if provided
     if len(sys.argv) > 4:
         arg = sys.argv[4].lower()
 
@@ -36,7 +34,7 @@ def parse_args():
             print_usage()
             sys.exit(0)
         elif arg in ["-a", "--all"]:
-            pass  # Already set to all
+            pass
         elif arg in ["-s", "--student"]:
             formats = {"student": True, "program": False, "word": False}
         elif arg in ["-h", "--hemis"]:
