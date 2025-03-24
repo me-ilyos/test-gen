@@ -1,87 +1,50 @@
-"""
-{
-  "questions": [{
-    "id": 1,
-    "text": "What is Python?",
-    "variants": [
-      {"id": 1, "text": "A snake"},
-      {"id": 2, "text": "A programming language"}
-    ],
-    "correct": 2
-  }]
-}
-"""
-
-import json
-import sys
 import os
-
-
-def transform_to_text(json_data):
-    output = []
-    for question in json_data["questions"]:
-        output.append(question["text"])
-        output.append("====")
-
-        for variant in question["variants"]:
-            output.append(
-                f"{'#' if variant['id'] == question['correct'] else ''}{variant['text']}"
-            )
-            output.append("====")
-
-        if question != json_data["questions"][-1]:
-            output.append("++++")
-
-    return "\n".join(output)
-
-
-def transform_to_student_format(json_data):
-    output = []
-    for i, question in enumerate(json_data["questions"], 1):
-        output.append(f"{i}. {question['text']}")
-
-        for j, variant in enumerate(question["variants"]):
-            letter = chr(97 + j)  # converts 0 to 'a', 1 to 'b', etc.
-            output.append(f"{letter}) {variant['text']}")
-
-        output.append("")  # Add empty line between questions
-
-    return "\n".join(output)
+import sys
+import json
+from parser import parse_input_file
+from formatters import (
+    transform_to_student_format,
+    transform_to_program_format,
+    create_word_document,
+)
+from utils import parse_args, get_output_paths, print_usage
 
 
 def main():
-    if len(sys.argv) != 4:
-        print("Usage: python script.py input_path output_folder output_name")
-        sys.exit(1)
+    if "--help" in sys.argv:
+        print_usage()
+        sys.exit(0)
 
-    input_path = sys.argv[1]
-    output_folder = sys.argv[2]
-    output_name = sys.argv[3]
+    input_path, output_folder, output_name, formats = parse_args()
 
-    if not os.path.exists(input_path):
-        print(f"Error: Input file {input_path} does not exist")
-        sys.exit(1)
+    os.makedirs(output_folder, exist_ok=True)
 
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    base_name, ext = os.path.splitext(output_name)
-    teacher_output = os.path.join(output_folder, output_name)
-    student_output = os.path.join(output_folder, f"{base_name}_student{ext}")
+    file_paths = get_output_paths(output_folder, output_name)
 
     try:
-        with open(input_path, "r") as file:
-            json_data = json.load(file)
+        json_data = parse_input_file(input_path)
 
-        # Generate teacher format
-        formatted_text = transform_to_text(json_data)
-        with open(teacher_output, "w") as file:
-            file.write(formatted_text)
+        if formats["student"]:
+            student_text = transform_to_student_format(json_data, include_variants=True)
+            with open(file_paths["student"], "w", encoding="utf-8") as file:
+                file.write(student_text)
 
-        # Generate student format
-        student_text = transform_to_student_format(json_data)
-        with open(student_output, "w") as file:
-            file.write(student_text)
+            student_text_novariants = transform_to_student_format(
+                json_data, include_variants=False
+            )
+            with open(file_paths["student_novariant"], "w", encoding="utf-8") as file:
+                file.write(student_text_novariants)
+            print(f"Generated student formats in {output_folder}")
+
+        if formats["program"]:
+            program_text = transform_to_program_format(json_data)
+            with open(file_paths["program"], "w", encoding="utf-8") as file:
+                file.write(program_text)
+            print(f"Generated program format in {output_folder}")
+
+        if formats["word"]:
+            create_word_document(json_data, file_paths["word"])
+            print(f"Generated Word document in {output_folder}")
 
     except json.JSONDecodeError:
         print("Error: Invalid JSON file")
