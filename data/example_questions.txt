@@ -1,0 +1,29 @@
+1. Python nima?
+a) Ilon turi
+b) *Dasturlash tili
+c) Operatsion tizim
+d) Ma'lumotlar bazasi
+
+2. CPU qanday ma'noni anglatadi?
+a) *Central Processing Unit
+b) Computer Processing Unit
+c) Central Program Utility
+d) Computer Program Utility
+
+3. HTML qisqartmasi nimani anglatadi?
+a) High Text Markup Language
+b) *Hypertext Markup Language
+c) Hypertext Markdown Language
+d) High Technical Markup Language
+
+4. Python da o'zgaruvchilarni e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+a) var
+b) let
+c) const
+d) *hech qanday kalit so'z kerak emas
+
+5. Qaysi dasturlash tili veb-sahifalar uchun skriptlar yaratishda ishlatiladi?
+a) Java
+b) C++
+c) *JavaScript
+d) Python
