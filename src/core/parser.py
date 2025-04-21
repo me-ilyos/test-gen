@@ -15,10 +15,10 @@ from typing import Dict, List, Optional, Any
 def parse_text_file(input_path: str) -> Dict:
     """
     Parse a text file containing test questions and answer variants.
-    
+
     Args:
         input_path: Path to the text file
-        
+
     Returns:
         Dictionary with parsed questions data
     """
@@ -27,22 +27,29 @@ def parse_text_file(input_path: str) -> Dict:
 
     # Split content into lines and parse questions
     lines = [line.strip() for line in content.split("\n")]
-    return _parse_question_lines(lines)
+
+    # Try to determine if the file has numbered questions or not
+    has_numbered_questions = any(re.match(r"^\d+\.\s+.+", line) for line in lines)
+
+    if has_numbered_questions:
+        return _parse_numbered_question_lines(lines)
+    else:
+        return _parse_unnumbered_question_lines(lines)
 
 
-def _parse_question_lines(lines: List[str]) -> Dict:
+def _parse_numbered_question_lines(lines: List[str]) -> Dict:
     """
-    Parse lines of text into structured question data.
-    
+    Parse lines of text into structured question data where questions have numbers.
+
     Args:
         lines: List of text lines from input file
-        
+
     Returns:
         Dictionary with parsed questions data
     """
     # Filter out empty lines
     lines = [line for line in lines if line]
-    
+
     questions = []
     current_question = None
     question_pattern = r"(\d+)\.\s+(.*)"
@@ -55,7 +62,7 @@ def _parse_question_lines(lines: List[str]) -> Dict:
             # Save previous question if exists
             if current_question:
                 questions.append(current_question)
-            
+
             # Create new question
             current_question = _create_question_dict(question_match)
             continue
@@ -73,19 +80,76 @@ def _parse_question_lines(lines: List[str]) -> Dict:
     return {"questions": questions}
 
 
+def _parse_unnumbered_question_lines(lines: List[str]) -> Dict:
+    """
+    Parse lines of text into structured question data where questions don't have numbers.
+
+    Args:
+        lines: List of text lines from input file
+
+    Returns:
+        Dictionary with parsed questions data
+    """
+    # Filter out empty lines
+    lines = [line for line in lines if line]
+
+    questions = []
+    current_question = None
+    variant_pattern = r"([a-z])\)\s+(\*?)(.+)"
+    variant_count = 0
+    question_id = 1
+
+    for line in lines:
+        # Check if line is an answer variant
+        variant_match = re.match(variant_pattern, line)
+
+        if variant_match:
+            variant_count += 1
+
+            # If this is the first variant and we have text stored
+            if variant_count == 1 and current_question is not None:
+                # Add the current question's variants
+                _add_variant_to_question(current_question, variant_match)
+            elif current_question is not None:
+                # Add more variants to existing question
+                _add_variant_to_question(current_question, variant_match)
+        else:
+            # If we've been collecting variants and find a non-variant line,
+            # it's probably a new question
+            if variant_count > 0:
+                if current_question:
+                    questions.append(current_question)
+                variant_count = 0
+
+            # If the line isn't a variant, it's likely a question text
+            current_question = {
+                "id": question_id,
+                "text": line.strip(),
+                "variants": [],
+                "correct": None,
+            }
+            question_id += 1
+
+    # Add the last question
+    if current_question:
+        questions.append(current_question)
+
+    return {"questions": questions}
+
+
 def _create_question_dict(question_match: re.Match) -> Dict:
     """
     Create a question dictionary from regex match.
-    
+
     Args:
         question_match: Regex match object for question line
-        
+
     Returns:
         Dictionary with question data structure
     """
     question_number = int(question_match.group(1))
     question_text = question_match.group(2).strip()
-    
+
     return {
         "id": question_number,
         "text": question_text,
@@ -97,7 +161,7 @@ def _create_question_dict(question_match: re.Match) -> Dict:
 def _add_variant_to_question(question: Dict, variant_match: re.Match) -> None:
     """
     Add answer variant to question from regex match.
-    
+
     Args:
         question: Question dictionary to update
         variant_match: Regex match object for variant line
@@ -116,10 +180,10 @@ def _add_variant_to_question(question: Dict, variant_match: re.Match) -> None:
 def parse_json_file(input_path: str) -> Dict:
     """
     Parse a JSON file containing test questions data.
-    
+
     Args:
         input_path: Path to the JSON file
-        
+
     Returns:
         Dictionary with parsed questions data
     """
@@ -130,10 +194,10 @@ def parse_json_file(input_path: str) -> Dict:
 def parse_input_file(input_path: str) -> Dict:
     """
     Parse an input file based on its file extension.
-    
+
     Args:
         input_path: Path to the input file
-        
+
     Returns:
         Dictionary with parsed questions data
     """
