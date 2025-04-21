@@ -49,14 +49,29 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     """
     Handle the /start command to begin bot interaction.
     
-    Sends welcome message and resets user state to waiting for file upload.
+    Sends welcome message, example file, and resets user state to waiting for file upload.
     """
+    # Send welcome message
     await update.message.reply_text(WELCOME_MESSAGE)
+    
+    # Reset user state
     user_id = update.effective_user.id
     user_states[user_id] = WAITING_FOR_FILE
     if user_id in user_data:
         user_data.pop(user_id, None)
-
+    
+    # Send example file
+    await update.message.reply_text("Savollar quyidagi formatda bo'lishi kerak. Namuna fayl:")
+    
+    # Get the path to the example file
+    example_file_path = os.path.join(os.path.dirname(__file__), "namuna.txt")
+    
+    # Send the example file
+    await context.bot.send_document(
+        chat_id=user_id,
+        document=open(example_file_path, 'rb'),
+        filename="namuna.txt"
+    )
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """
@@ -140,18 +155,25 @@ async def _process_uploaded_file(update: Update, context: ContextTypes.DEFAULT_T
 async def _check_duplicates_and_prompt_format(update: Update, context: ContextTypes.DEFAULT_TYPE,
                                              json_data: Dict, user_id: int) -> None:
     """
-    Check for duplicate questions and prompt user for format selection.
+    Check for duplicate questions and prompt user for format selection only if no duplicates found.
     
-    Generates duplicate report if needed and shows format selection buttons.
+    Checks for:
+    1. Identical questions
+    2. Identical answer variants across different questions
+    3. Identical options within the same question
+    
+    If any duplicates are found, stops the workflow and sends a report.
     """
     # Check for duplicates
     duplicate_report = generate_duplicate_report(json_data)
     
     if "No duplicate or similar content found" in duplicate_report:
         await update.message.reply_text(NO_DUPLICATES_MESSAGE)
+        # Show format selection buttons since no duplicates were found
+        await _show_format_selection(update, context, user_id)
     else:
         # Send duplicate report message
-        await update.message.reply_text(f"{DUPLICATE_REPORT_MESSAGE}")
+        await update.message.reply_text(DUPLICATE_REPORT_MESSAGE)
         
         # Generate Word document for duplicate report
         with tempfile.NamedTemporaryFile(delete=False, suffix='.docx') as report_file:
@@ -167,10 +189,18 @@ async def _check_duplicates_and_prompt_format(update: Update, context: ContextTy
             filename=f"{user_data[user_id]['file_name']}_takrorlanishlar.docx"
         )
         os.unlink(report_path)
-    
-    # Show format selection buttons
-    await _show_format_selection(update, context, user_id)
-
+        
+        # Clear user state and inform that they need to fix duplicates before proceeding
+        user_states[user_id] = WAITING_FOR_FILE
+        await update.message.reply_text(
+            "❌ Savollaringizda takrorlanishlar mavjud. Iltimos, avval takrorlanishlarni bartaraf qiling, "
+            "so'ng faylni qayta yuboring. Konvertatsiya jarayoni to'xtatildi."
+        )
+        
+        # Clean up the uploaded file
+        if 'file_path' in user_data[user_id] and os.path.exists(user_data[user_id]['file_path']):
+            os.unlink(user_data[user_id]['file_path'])
+        user_data.pop(user_id, None)
 
 async def _show_format_selection(update: Update, context: ContextTypes.DEFAULT_TYPE, user_id: int) -> None:
     """

@@ -1,0 +1,299 @@
+1. Kotlin dasturlash tilida o'zgarmas qiymatlarni e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+a) var
+b) const
+c) *val
+d) final
+
+2. Kotlin dasturlash tilida string qiymatlarni birlashtirish uchun qaysi operator ishlatiladi?
+a) *+
+b) &
+c) ++
+d) ||
+
+3. Android loyihasida layout XML fayllari qaysi papkada saqlanadi?
+a) /src/main/java
+b) */src/main/res/layout
+c) /src/main/xml
+d) /res/layout
+
+4. Android ilovasini real qurilmada test qilish uchun qaysi vositalar kerak bo'ladi?
+a) Faqat USB kabel
+b) *USB kabel yoki Wi-Fi ulanish
+c) Faqat Bluetooth
+d) Faqat emulyator
+
+5. Kotlinda funksiya e'lon qilish uchun qaysi kalit so'z ishlatiladi?
+a) function
+b) *fun
+c) def
+d) method
+
+6. Kotlinda 1 dan 10 gacha sonlar diapazonini qanday ifodalash mumkin?
+a) 1...10
+b) *1..10
+c) 1->10
+d) 1<=10
+
+7. Android Activity hayot siklida ilova birinchi marta yaratilganda qaysi metod chaqiriladi?
+a) onStart()
+b) *onCreate()
+c) onResume()
+d) onLaunch()
+
+8. XML layoutda TextView'ning matnini markazga joylash uchun qaysi atribut ishlatiladi?
+a) android:align="center"
+b) *android:gravity="center"
+c) android:textAlign="center"
+d) android:position="center"
+
+9. Kotlin dasturlash tilida if-else konstruksiyasi natijasini qaysi usulda o'zgaruvchiga berish mumkin?
+a) *var result = if (condition) { trueValue } else { falseValue }
+b) var result = condition ? trueValue : falseValue
+c) if (condition) { var result = trueValue } else { var result = falseValue }
+d) var result = condition then trueValue else falseValue
+
+10. Android'da tugmaga bosilganda bajariladigan amal uchun qaysi interfeys va metod ishlatiladi?
+a) OnPressListener va onPress()
+b) *OnClickListener va onClick()
+c) OnTouchListener va onTouch()
+d) ButtonListener va onButtonClick()
+
+11. Kotlinda ro'yxat (List) e'lon qilish uchun to'g'ri sintaksis qaysi?
+a) val fruits = list("apple", "banana", "orange")
+b) val fruits = List("apple", "tangerine", "orange")
+c) *val fruits = listOf("apple", "banana", "orange")
+d) val fruits = ["apple", "banana", "orange"]
+
+12. XML layoutda element atrofiga bo'sh joy qo'shish uchun qaysi atribut ishlatiladi?
+a) android:space
+b) *android:padding
+c) android:margin
+d) android:gap
+
+13. Android ilovalaridagi string qiymatlarini qaysi fayl tarkibida saqlash tavsiya etiladi?
+a) main.xml
+b) *strings.xml
+c) values.xml
+d) text.xml
+
+14. Kotlin dasturlash tilida o'zgaruvchining qiymati null bo'lishi mumkinligini qanday ko'rsatiladi?
+a) var name: String!
+b) *var name: String?
+c) var name: String*
+d) var name: String~
+
+15. Android loyihasida rasmlar qaysi papkada saqlanadi?
+a) */src/main/res/drawable
+b) /src/main/assets/images
+c) /src/main/res/images
+d) /res/images
+
+16. Kotlin dasturlash tilida when ifodasi quyidagidan qaysi biriga o'xshaydi?
+a) if-else
+b) try-catch
+c) *switch-case
+d) for-each
+
+17. Android ilovasida bir Activity'dan boshqa Activity'ga o'tish uchun qanday komponent ishlatiladi?
+a) *Intent
+b) ActivityManager
+c) Navigator
+d) Transition
+
+18. Kotlin dasturlash tilida o'zgaruvchan (o'zgaradigan) ro'yxatni qaysi funksiya orqali yaratish mumkin?
+a) arrayOf()
+b) *mutableListOf()
+c) setOf()
+d) hashMapOf()
+
+19. XML layoutda LinearLayout ichidagi elementlarga proportsional joy ajratish uchun qaysi atribut ishlatiladi?
+a) android:size
+b) android:proportion
+c) *android:weight
+d) android:scale
+
+20. Activity hayot siklining qaysi metodida foydalanuvchi ilovani ko'ra oladi, lekin hali u bilan o'zaro ta'sir qila olmaydi?
+a) onCreate()
+b) *onStart()
+c) onResume()
+d) onPause()
+
+21. Android Fragment nima?
+a) *Activity'ning bir qismi bo'lib, o'z hayot sikliga ega UI komponenti
+b) Tugma va matn kiritish maydonlaridagi parchalangan qism
+c) Ma'lumotlar bazasidagi bir qator
+d) XML faylining muhim atributi
+
+22. Kotlin dasturlash tilida Map (lug'at) ma'lumotlar to'plamini e'lon qilishning to'g'ri yo'li qaysi?
+a) val ages = ["Ali" = 25, "Vali" = 30]
+b) *val ages = mapOf("Ali" to 25, "Vali" to 30)
+c) val ages = Map("Ali", 25, "Vali", 30)
+d) val ages = dictOf("Ali" -> 25, "Vali" -> 30)
+
+23. Activity orientatsiyasi o'zgarganda (portrait dan landscape ga yoki aksincha) qaysi hodisa ro'y beradi?
+a) *Activity qayta yaratiladi
+b) Activity orientatsiyasini o'zgartiradi, ammo qayta yaratilmaydi
+c) Bu holat avtomatik boshqarilmaydi, dasturchi o'zi boshqarishi kerak
+d) Activity hech qanday o'zgarishsiz qoladi
+
+24. XML layoutda elementlar orasida masofa yaratish uchun qaysi atribut ishlatiladi?
+a) android:spacing
+b) *android:margin
+c) android:gap
+d) android:distance
+
+25. Android'da LinearLayout uchun qanday orientation turlari mavjud?
+a) top, bottom, left, right
+b) *horizontal, vertical
+c) row, column
+d) x-axis, y-axis
+
+26. Kotlinda for tsikli yozishning to'g'ri usuli qaysi?
+a) for (i = 0; i < 10; i++) { }
+b) for (var i in 0..9) { }
+c) *for (i in 0..9) { }
+d) for i in range(0, 10): { }
+
+27. Activity holati o'zgarishida (masalan, ekran burilganda) ma'lumotlarni saqlash uchun qaysi metod ishlatiladi?
+a) saveState()
+b) onSave()
+c) *onSaveInstanceState()
+d) storeData()
+
+28. EditText'dan matnni olish uchun qaysi metod qo'llaniladi?
+a) editText.value
+b) *editText.getText().toString()
+c) editText.content
+d) editText.getString()
+
+29. FrameLayout'ning asosiy xususiyati nima?
+a) *Bir necha elementlarni ustma-ust joylashtirish imkoniyati
+b) Elementlarni ekran bo'ylab tarqatish
+c) Elementlarni vertikal yoki gorizontal joylashtirish
+d) Jadval ko'rinishida elementlarni joylashtirish
+
+30. Kotlinda qanday Set (to'plam) turlari mavjud?
+a) *Set va MutableSet
+b) HashSet va TreeSet
+c) StaticSet va DynamicSet
+d) ReadSet va WriteSet
+
+31. Activity hayot siklida onDestroy() metodi qachon chaqiriladi?
+a) Activity boshlanganda
+b) Activity to'xtatilganda
+c) *Activity yo'q qilinishidan oldin
+d) Qurilma ekrani o'chirilganda
+
+32. Kotlin dasturlash tilida ro'yxat (List) ichidagi elementlarni saralash (sort) qilish uchun qaysi funksiya ishlatiladi?
+a) list.order()
+b) *list.sorted()
+c) list.sortBy()
+d) list.arrange()
+
+33. Fragment bilan Activity o'rtasida ma'lumot almashish uchun eng yaxshi usul qaysi?
+a) *Fragment argumenlaridan foydalanish (Bundle)
+b) Global o'zgaruvchilar orqali
+c) SharedPreferences orqali
+d) SQLite ma'lumotlar bazasi orqali
+
+34. XML layout faylida ImageView uchun rasm o'rnatish atributi qaysi?
+a) android:image
+b) *android:src
+c) android:imageUrl
+d) android:picture
+
+35. Jetpack Compose nima?
+a) Android Studio'ning yangi versiyasi
+b) *Android uchun zamonaviy UI yaratish uchun deklarativ dasturlash toolkit'i
+c) Yangi dasturlash tili
+d) SQL ma'lumotlar bazasini boshqarish kutubxonasi
+
+36. Kotlinda shartli ifodani tekshirishda (a > b) && (c > d) nima anglatadi?
+a) a > b yoki c > d
+b) *a > b va c > d
+c) a > b yoki c > d emas
+d) a > b va c > d emas
+
+37. Activity hayot siklida ilova orqa fonga o'tkazilganda qaysi metodlar ketma-ketligi chaqiriladi?
+a) *onPause() -> onStop()
+b) onStop() -> onPause()
+c) onPause() -> onDestroy()
+d) onStop() -> onDestroy()
+
+38. Jetpack Compose'da UI elementlarini yaratish uchun nima ishlatiladi?
+a) XML fayllari
+b) *Kompozitsiya funksiyalari (Composable functions)
+c) Java klasslari
+d) Layout resurslar
+
+39. RelativeLayout'ning asosiy xususiyati nima?
+a) Faqat vertikal yo'nalishda elementlarni joylashtirish
+b) *Elementlarni bir-biriga nisbatan joylashtirishni belgilash
+c) Elementlarni ustma-ust qilish
+d) Ekranning faqat markaziga elementlarni joylashtirish
+
+40. XML layoutda android:gravity va android:layout_gravity o'rtasidagi farq nima?
+a) Ular bir xil vazifani bajaradi
+b) *gravity - element ichidagi kontentni, layout_gravity - elementni o'z konteynerida joylashtiradi
+c) gravity - faqat matnlar uchun, layout_gravity - barcha elementlar uchun
+d) gravity - tayinlangan view'ni o'zgartirolmaydi, layout_gravity - view'ni o'zgartiradi
+
+41. Kotlin dasturlash tilida qanday fayllar yaratiladi?
+a) *.kt
+b) .kts
+c) .kotlin
+d) .ktl
+
+42. Activity hayot siklining quyidagi metodlaridan qaysi biri foydalanuvchi ilova bilan o'zaro aloqada bo'la oladigan birinchi nuqta hisoblanadi?
+a) onCreate()
+b) onStart()
+c) *onResume()
+d) onPrepare()
+
+43. Fragment hayot siklining qaysi metodi UI elementlarini yaratish uchun ishlatiladi?
+a) onCreate()
+b) *onCreateView()
+c) onViewCreated()
+d) onStart()
+
+44. Quyidagi Kotlin kodi nima qiladi? val result = if (x > 10) "Katta" else "Kichik"
+a) x > 10 bo'lsa xato beradi
+b) *result o'zgaruvchisiga x > 10 bo'lsa "Katta", aks holda "Kichik" qiymatini beradi
+c) Bu kod sintaktik jihatdan noto'g'ri
+d) result doim "Kichik" qiymatiga ega bo'ladi
+
+45. Activity hayot sikli metodlarining to'g'ri tartibini ko'rsating:
+a) *onCreate() -> onStart() -> onResume()
+b) onStart() -> onCreate() -> onResume()
+c) onResume() -> onStart() -> onCreate()
+d) onCreate() -> onResume() -> onStart()
+
+46. Android ilovalari uchun usb orqali haqiqiy qurilmaga ulanganda, qurilmada qanday sozlamani yoqish kerak?
+a) Wi-Fi Direct
+b) USB Storage
+c) *Developer Options ichidagi USB Debugging
+d) NFC
+
+47. Kotlinda val va var o'rtasidagi farq nima?
+a) val - global o'zgaruvchi, var - lokal o'zgaruvchi
+b) *val - read-only (o'zgarmas), var - mutable (o'zgaruvchan)
+c) val - primitiv tiplar uchun, var - obyektlar uchun
+d) val - klasslar uchun, var - funksiyalar uchun
+
+48. Jetpack Compose'da quyidagi kod bloki nima vazifani bajaradi? @Composable fun Greeting(name: String) { Text("Hello $name!") }
+a) Matnni konsolga chiqaradi
+b) *UI elementini yaratadi, "Hello" so'zi va name parametri qiymatini ko'rsatadi
+c) Bu kod noto'g'ri sintaksisga ega
+d) Java klassi bilan Kotlin funksiyasini bog'laydi
+
+49. Activity yoki Fragment holatini Bundle orqali saqlashda qanday turdagi ma'lumotlarni saqlash mumkin?
+a) Faqat oddiy turdagi ma'lumotlar (int, boolean, String)
+b) Faqat String tipidagi ma'lumotlar
+c) *Primitiv tiplar, String, va Serializable/Parcelable interfeyslari bilan belgilangan sinflar
+d) Istalgan turdagi ma'lumotlar
+
+50. Quyidagi kod nimani bildiradi? val numbers = (1..10).toList()
+a) *1 dan 10 gacha bo'lgan sonlarni o'z ichiga olgan ro'yxat
+b) 1 dan 10 gacha bo'lgan juft sonlarni o'z ichiga olgan ro'yxat
+c) 10 ta tasodifiy son hosil qilish
+d) 1 dan 10 gacha bo'lgan sonlar yig'indisini hisoblash

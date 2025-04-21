@@ -44,9 +44,9 @@ To'g'ri javob oldiga * belgisini qo'ying.
 FILE_RECEIVED_MESSAGE = "✅ Fayl qabul qilindi! Tekshirilmoqda..."
 INVALID_FILE_MESSAGE = "❌ Xato! Faylning formati noto'g'ri. Iltimos, .txt faylini yuboring."
 
-# Duplicate checking messages
-DUPLICATE_REPORT_MESSAGE = "📊 Takrorlanishlar hisoboti:"
-NO_DUPLICATES_MESSAGE = "✅ Takrorlanishlar topilmadi! Barcha savollar noyob."
+DUPLICATE_REPORT_MESSAGE = "⚠️ Quyidagi xatolar aniqlandi: (1) Bir xil savollar yoki (2) Bir savol ichida bir xil variantlar! Quyidagi hisobotda batafsil ma'lumot berilgan:"
+NO_DUPLICATES_MESSAGE = "✅ Takrorlanishlar topilmadi! Barcha savollar noyob va har bir savol ichidagi variantlar ham noyob."
+DUPLICATES_FOUND_ERROR = "❌ Savollaringizda xatoliklar mavjud: takrorlanayotgan savollar yoki bir savol ichida bir xil variantlar. Iltimos, avval xatolarni bartaraf qiling, so'ng faylni qayta yuboring. Konvertatsiya jarayoni to'xtatildi."
 
 # Format selection and generation messages
 FORMAT_CHOICE_MESSAGE = "Qaysi formatga aylantirmoqchi ekanligingizni tanlang:"
