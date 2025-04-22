@@ -1,12 +1,13 @@
 """
-Entry point for the test question checker bot application.
+Entry point for the test question converter bot application.
 
-This file contains the main function to initialize and run the Telegram bot,
-setting up all the necessary handlers and configurations.
+This file initializes and runs the Telegram bot, setting up all the
+necessary handlers and configurations.
 """
 
 import os
 import logging
+from dotenv import load_dotenv
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -22,77 +23,53 @@ from src.bot.handlers import (
     button_callback,
     text_message,
 )
-from src.utils.helpers import load_environment_variables
-from src.utils.logger import logger as app_logger
 
+# Create logs directory if it doesn't exist
+os.makedirs("logs", exist_ok=True)
 
 # Configure basic logging
 logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(os.path.join("logs", "bot.log")),
+    ],
 )
 logger = logging.getLogger(__name__)
-
-
-def setup_handlers(application: Application) -> None:
-    """
-    Register all command and message handlers for the bot.
-
-    Args:
-        application: The Telegram bot application instance
-    """
-    # Add command handlers
-    application.add_handler(CommandHandler("start", start_command))
-    application.add_handler(CommandHandler("help", help_command))
-
-    # Add message handlers
-    application.add_handler(MessageHandler(filters.Document.ALL, receive_file))
-    application.add_handler(
-        MessageHandler(filters.TEXT & ~filters.COMMAND, text_message)
-    )
-
-    # Add callback query handler
-    application.add_handler(CallbackQueryHandler(button_callback))
 
 
 def main() -> None:
     """
     Initialize and run the Telegram bot application.
-
-    Loads environment variables, creates the bot application,
-    sets up handlers, and starts the bot.
     """
+    # Create logs directory if it doesn't exist
+    os.makedirs("logs", exist_ok=True)
+
     # Load environment variables
-    env_vars = load_environment_variables()
-    bot_token = env_vars.get("TELEGRAM_BOT_TOKEN")
+    load_dotenv()
+    bot_token = os.getenv("BOT_TOKEN")
 
     if not bot_token:
-        logger.error("TELEGRAM_BOT_TOKEN environment variable not set")
-        app_logger.error(
-            "Bot startup failed: TELEGRAM_BOT_TOKEN environment variable not set"
-        )
-        exit(1)
+        logger.error("BOT_TOKEN environment variable not set")
+        return
 
     # Create the application
     application = Application.builder().token(bot_token).build()
 
     # Setup handlers
-    setup_handlers(application)
+    application.add_handler(CommandHandler("start", start_command))
+    application.add_handler(CommandHandler("help", help_command))
+    application.add_handler(MessageHandler(filters.Document.ALL, receive_file))
+    application.add_handler(
+        MessageHandler(filters.TEXT & ~filters.COMMAND, text_message)
+    )
+    application.add_handler(CallbackQueryHandler(button_callback))
 
-    # Log bot startup
-    startup_message = "Starting Test Questions Checker Bot"
-    logger.info(startup_message)
-    app_logger.info(f"Bot initialized: {startup_message}")
-
-    # Run the bot until the user presses Ctrl-C
+    # Start the bot
+    logger.info("Starting Test Questions Converter Bot")
     application.run_polling()
 
 
 if __name__ == "__main__":
-    # Create logs directory if it doesn't exist
-    os.makedirs("logs", exist_ok=True)
-
-    # Log application start
-    app_logger.info("=== Application Starting ===")
-
-    # Run the main function
     main()

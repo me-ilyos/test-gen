@@ -2,7 +2,7 @@
 a) var
 b) const
 c) *val
-d) final
+d) const
 
 2. Kotlin dasturlash tilida string qiymatlarni birlashtirish uchun qaysi operator ishlatiladi?
 a) *+
