@@ -70,44 +70,40 @@ def transform_to_program_format(json_data: Dict) -> str:
 
     return "\n".join(output)
 
-
 def create_word_document(json_data: Dict, output_path: str) -> None:
     """
     Create a Word document with questions in tables.
     First row contains the question, second row contains the correct answer,
     and remaining rows contain incorrect answers.
-
-    Args:
-        json_data: Dictionary containing questions data
-        output_path: Path to save the Word document
     """
     doc = Document()
     questions = json_data["questions"]
 
     for question in questions:
         # Create table for this question
-        num_variants = len(question["variants"])
-        table = doc.add_table(rows=num_variants + 1, cols=1)
+        table = doc.add_table(rows=len(question["variants"]) + 1, cols=1)
         table.style = "Table Grid"
 
         # Add question to first row
         table.cell(0, 0).text = question["text"]
 
         # Find the correct answer
-        correct_variants = [
-            v for v in question["variants"] if v["id"] == question["correct"]
-        ]
-
-        if correct_variants:
-            # Add correct answer to second row
-            table.cell(1, 0).text = correct_variants[0]["text"]
-
+        correct_variant = None
+        incorrect_variants = []
+        
+        for variant in question["variants"]:
+            if variant["id"] == question["correct"]:
+                correct_variant = variant
+            else:
+                incorrect_variants.append(variant)
+        
+        # Add correct answer to second row
+        if correct_variant:
+            table.cell(1, 0).text = correct_variant["text"]
+            
             # Add incorrect answers to remaining rows
-            row = 2
-            for variant in question["variants"]:
-                if variant["id"] != question["correct"]:
-                    table.cell(row, 0).text = variant["text"]
-                    row += 1
+            for i, variant in enumerate(incorrect_variants):
+                table.cell(i + 2, 0).text = variant["text"]
         else:
             # If no correct answer is found, just add all variants in order
             for i, variant in enumerate(question["variants"]):
@@ -117,4 +113,23 @@ def create_word_document(json_data: Dict, output_path: str) -> None:
         doc.add_paragraph()
 
     # Save the document
+    doc.save(output_path)
+
+
+
+def create_student_word_document(json_data: Dict, output_path: str, include_variants: bool = True) -> None:
+    """Create a Word document with questions in student format."""
+    doc = Document()
+    questions = json_data["questions"]
+
+    for question in questions:
+        doc.add_paragraph(f"{question['id']}. {question['text']}")
+
+        if include_variants:
+            for variant in question["variants"]:
+                letter = chr(96 + variant["id"])
+                doc.add_paragraph(f"{letter}) {variant['text']}")
+
+        doc.add_paragraph()  # Space between questions
+
     doc.save(output_path)

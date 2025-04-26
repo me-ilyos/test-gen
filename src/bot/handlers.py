@@ -15,6 +15,7 @@ from telegram.ext import ContextTypes
 from src.core.parser import parse_text_file
 from src.core.formatters import (
     transform_to_student_format,
+    create_student_word_document,
     transform_to_program_format,
     create_word_document,
 )
@@ -176,19 +177,15 @@ async def show_format_selection(
 
 
 async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """
-    Handle button callback queries for format selection.
-    """
+    """Handle format selection and generate appropriate files."""
     query = update.callback_query
     await query.answer()
 
     selected_format = query.data
-
-    # Check if we have user data
+    
+    # Check for valid user data
     if not context.user_data.get("json_data"):
-        await query.edit_message_text(
-            "⚠️ Sessiya vaqti tugadi. Iltimos, faylni qayta yuboring."
-        )
+        await query.edit_message_text("⚠️ Sessiya vaqti tugadi. Iltimos, faylni qayta yuboring.")
         return
 
     await query.edit_message_text(f"⏳ {selected_format} formatida tayyorlanmoqda...")
@@ -198,79 +195,47 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     file_name = context.user_data["file_name"]
     file_path = context.user_data["file_path"]
 
-    # Determine which formats to generate
-    formats_to_generate = (
-        ["student", "student_novariant", "hemis", "word"]
-        if selected_format == "all"
-        else [selected_format]
-    )
+    # Determine formats to generate
+    formats_to_generate = ["student", "student_novariant", "hemis", "word"] if selected_format == "all" else [selected_format]
 
-    # Create a temporary directory for the output files
+    # Create temporary directory for output files
     with tempfile.TemporaryDirectory() as temp_dir:
         for format_type in formats_to_generate:
             try:
-                if format_type == "student":
-                    # Student format with variants
-                    output_path = os.path.join(
-                        temp_dir, f"{file_name}_TalabaVariant.txt"
-                    )
-                    student_text = transform_to_student_format(
-                        json_data, include_variants=True
-                    )
-                    with open(output_path, "w", encoding="utf-8") as f:
-                        f.write(student_text)
-
-                    await context.bot.send_document(
-                        chat_id=update.effective_user.id,
-                        document=open(output_path, "rb"),
-                        filename=f"{file_name}_TalabaVariant.txt",
-                    )
-
-                elif format_type == "student_novariant":
-                    # Student format without variants
-                    output_path = os.path.join(
-                        temp_dir, f"{file_name}_TalabaNovariant.txt"
-                    )
-                    student_text = transform_to_student_format(
-                        json_data, include_variants=False
-                    )
-                    with open(output_path, "w", encoding="utf-8") as f:
-                        f.write(student_text)
-
-                    await context.bot.send_document(
-                        chat_id=update.effective_user.id,
-                        document=open(output_path, "rb"),
-                        filename=f"{file_name}_TalabaNovariant.txt",
-                    )
-
-                elif format_type == "hemis":
-                    # HEMIS format
+                if format_type == "hemis":
+                    # HEMIS format (text file)
                     output_path = os.path.join(temp_dir, f"{file_name}_Hemis.txt")
                     hemis_text = transform_to_program_format(json_data)
                     with open(output_path, "w", encoding="utf-8") as f:
                         f.write(hemis_text)
-
-                    await context.bot.send_document(
-                        chat_id=update.effective_user.id,
-                        document=open(output_path, "rb"),
-                        filename=f"{file_name}_Hemis.txt",
-                    )
-
+                    
+                elif format_type == "student":
+                    # Student format with variants (Word)
+                    output_path = os.path.join(temp_dir, f"{file_name}_TalabaVariant.docx")
+                    create_student_word_document(json_data, output_path, include_variants=True)
+                    
+                elif format_type == "student_novariant":
+                    # Student format without variants (Word)
+                    output_path = os.path.join(temp_dir, f"{file_name}_TalabaNovariant.docx")
+                    create_student_word_document(json_data, output_path, include_variants=False)
+                    
                 elif format_type == "word":
-                    # Word document format
+                    # Word table format
                     output_path = os.path.join(temp_dir, f"{file_name}_Yakuniy.docx")
                     create_word_document(json_data, output_path)
-
-                    await context.bot.send_document(
-                        chat_id=update.effective_user.id,
-                        document=open(output_path, "rb"),
-                        filename=f"{file_name}_Yakuniy.docx",
-                    )
-
+                
+                # Send file to user
+                await context.bot.send_document(
+                    chat_id=update.effective_user.id,
+                    document=open(output_path, "rb"),
+                    filename=os.path.basename(output_path)
+                )
+                
             except Exception as e:
+                # logger.error(f"Error processing {format_type}: {str(e)}")
                 await context.bot.send_message(
                     chat_id=update.effective_user.id,
-                    text=f"❌ Xato! {format_type} formatini yaratishda muammo yuzaga keldi: {str(e)}",
+                    text=f"❌ Xato! {format_type} formatini yaratishda muammo yuzaga keldi."
                 )
 
     # Clean up
@@ -278,11 +243,10 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         os.unlink(file_path)
     context.user_data.clear()
 
-    # Send completion message
     await context.bot.send_message(
-        chat_id=update.effective_user.id, text="✅ Tayyor! Natijalarni yuklab oling."
+        chat_id=update.effective_user.id, 
+        text="✅ Tayyor! Natijalarni yuklab oling."
     )
-
 
 async def text_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """

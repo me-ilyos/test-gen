@@ -12,76 +12,63 @@ from typing import Dict, List, Optional
 
 
 def parse_text_file(input_path: str) -> Dict:
-    """
-    Parse a text file containing test questions and answer variants.
+    """Parse a text file containing test questions and answer variants."""
+    try:
+        with open(input_path, "r", encoding="utf-8") as file:
+            content = file.read()
+    except UnicodeDecodeError:
+        with open(input_path, "r", encoding="cp1251") as file:
+            content = file.read()
 
-    Args:
-        input_path: Path to the text file
-
-    Returns:
-        Dictionary with parsed questions data
-    """
-    with open(input_path, "r", encoding="utf-8") as file:
-        content = file.read()
-
-    # Split content into lines and remove empty lines
-    lines = [line.strip() for line in content.split("\n") if line.strip()]
-
+    # Split by double newlines to separate questions
+    question_blocks = content.split("\n\n")
     questions = []
-    current_question = None
-
-    # Common regex patterns
-    question_pattern = re.compile(r"(\d+)\.?\s+(.*)")
-    # Support both a) and a. format for variants
-    variant_pattern = re.compile(r"([a-z])[\.|\)]\s*(\*?)(.+)")
-
-    for line in lines:
-        # Check if line is a question
-        question_match = question_pattern.match(line)
-        if question_match:
-            # Save previous question if exists
-            if current_question:
-                questions.append(current_question)
-
-            # Create new question
-            question_number = int(question_match.group(1))
-            question_text = question_match.group(2).strip()
-
-            current_question = {
-                "id": question_number,
-                "text": question_text,
-                "variants": [],
-                "correct": None,
-            }
+    
+    for i, block in enumerate(question_blocks):
+        if not block.strip():
+            continue  # Skip empty blocks
+            
+        lines = [line.strip() for line in block.split("\n") if line.strip()]
+        if not lines:
             continue
-
-        # Check if line is an answer variant
-        variant_match = variant_pattern.match(line)
-        if variant_match and current_question is not None:
-            variant_letter = variant_match.group(1)
-            is_correct = bool(variant_match.group(2))
-            variant_text = variant_match.group(3).strip()
-
-            # Convert letter to number (a->1, b->2, etc.)
-            variant_id = ord(variant_letter) - ord("a") + 1
-
-            # Add variant to current question
-            current_question["variants"].append(
-                {"id": variant_id, "text": variant_text}
-            )
-
-            # Mark as correct if it has an asterisk
-            if is_correct:
-                current_question["correct"] = variant_id
-        elif not current_question:
-            # If we encounter text before any question number,
-            # assume it's an unnumbered question
-            current_question = {"id": 1, "text": line, "variants": [], "correct": None}
-
-    # Add the last question
-    if current_question:
-        questions.append(current_question)
-
+            
+        # First line is the question
+        question_text = lines[0]
+        
+        # Initialize question object
+        question = {
+            "id": i + 1,
+            "text": question_text,
+            "variants": [],
+            "correct": None,
+        }
+        
+        # Process answer options
+        variant_pattern = re.compile(r"^([a-d])\)\s*(\*?)(.+)$")
+        for line in lines[1:]:
+            variant_match = variant_pattern.match(line)
+            if variant_match:
+                variant_letter = variant_match.group(1)
+                is_correct = bool(variant_match.group(2))
+                variant_text = variant_match.group(3).strip()
+                
+                # Convert letter to number (a->1, b->2, etc.)
+                variant_id = ord(variant_letter) - ord('a') + 1
+                
+                # Add variant
+                question["variants"].append({
+                    "id": variant_id, 
+                    "text": variant_text
+                })
+                
+                # Mark as correct if it has an asterisk
+                if is_correct:
+                    question["correct"] = variant_id
+        
+        # Only add if we have both a question and variants
+        if question["text"] and question["variants"]:
+            questions.append(question)
+    
     return {"questions": questions}
 
 
